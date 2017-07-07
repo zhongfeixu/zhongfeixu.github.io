@@ -1,0 +1,217 @@
+
+/*公用css样式*/
+@charset "utf-8";
+.game-mian{
+    position: relative;
+    margin-top: 79px;
+}
+body{
+    background: #FFFFFF;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,li,dd,dt{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "MicroSoft YaHei";
+    color: #999;
+    font-size: 12px;
+}
+input,img{
+    outline-style: none;
+    border: 0 none;
+}
+a{
+    text-decoration: none;
+    color: #999;
+}
+a:hover{
+    color: #db0213;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+}
+.clearfix{
+    zoom: 1;
+}
+
+.box{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+i,s,b{
+    font-style: normal;
+    text-decoration: none;
+}
+
+.banxin{
+    width: 960px;
+    margin: 0 auto;
+}
+.display{
+    display: none;
+}
+/*预留，以后清除*/
+.yuliu{
+    width: 100%;
+    height: 450px;
+    background: url("../images/g-kv.jpg")  no-repeat center top;
+    position: relative;
+}
+
+/*返回a链接*/
+.gotoBack{
+    padding-top: 20px;
+}
+.gotoBack a{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #1568BF;
+    position: relative;
+}
+.gotoBack a i{
+    width: 5px;
+    height: 7px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: -10px;
+}
+
+/*本页主推游戏*/
+.game_content{
+    text-align: center;
+}
+.game_text{
+    font-size: 20px;
+    color: #1568BF;
+}
+
+/*本页下面三个小标题*/
+    .cut-bar{
+
+        margin: 25px auto auto;
+        overflow: hidden;
+   }
+.cut-bar ul{
+    padding-left: 200px;
+}
+.cut-bar ul li{
+        float: left;
+        /*width: 180px;*/
+        /*height: 40px;*/
+        line-height: 40px;
+        /*background-color: #d6d6d6;*/
+        margin-right: 5px;
+        text-align: center;
+        color: #000;
+        display: block;
+        cursor: pointer;
+        font-size: 14px;
+    }
+.cut-bar ul li a{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+}
+    .cut-bar ul .current{
+        border-bottom:3px solid red;
+        color: #ffffff;
+        /*background: #01408f;*/
+        display: block;
+    }
+
+.current a{
+    opacity: 0.25;
+}
+
+/*内容主题部分*/
+.marginTop50 {
+    margin-top: 50px !important;
+}
+.img_content {
+    margin-top: 20px;
+}
+  .game-titles {
+      width: 960px;
+      float: left;
+  }
+.game-titles ul li{
+    width: 222px;
+    float: left;
+    margin-right: 18px;
+    text-align: left;
+    color:black;
+    margin-bottom: 50px;
+}
+.game-titles ul li span{
+    height: 20px;
+    line-height: 20px;
+}
+.game-titles ul li h2{
+    height: 22px;
+    line-height: 22px;
+}
+.game-titles ul .g-title-1{
+    width: 450px;
+    text-align: left;
+    margin-right: 30px;
+}
+
+.goTop{
+    float: right;
+    position: relative;
+
+    right: 67px;
+    marigin-top:20px
+}
+
+.square{
+    margin-top: 20px;
+}
+.square span{
+    display:inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #1568BF;
+    color: #9E5E5E;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.square span.current{
+    background-color: #E5E5E5;
+    color: black;
+    border-color: transparent;
+}
+.goTop a{
+    float: right;
+    position: relative;
+    right: 67px;
+    top: 24px
+}

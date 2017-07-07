@@ -1,0 +1,1767 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game中部</title>
+    <link rel="stylesheet" href="../css/gameCss.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/xuanzhuanmuma.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/head.css"/>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/shouye-lunbotu1.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script src="../jQuery/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../css/123/style1.css"/>
+    <link rel="stylesheet" href="../css/123/style_common.css"/>
+
+    <link rel="stylesheet" href="../css/gameRank.css"/>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+<!--顶栏开始-->
+<div class="top_big_box">
+    <!--头部通栏-->
+    <div class="top">
+        <img class="fr" src="../images/sonylogo.jpg" alt=""/>
+
+        <div class="fr"><a href="login.html">注册</a><span>&nbsp;|&nbsp;</span><a href="login_in.html">登入</a></div>
+    </div>
+
+    <script type="text/javascript" src="../jQuery/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        //ready
+        $(function () {
+            //PlayStation®4
+            $(".show").eq(1).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(0).stop().slideDown();
+            })
+            $(".show").eq(1).mouseleave(function () {
+                $(".nav-xialabox").eq(0).stop().slideUp();
+            })
+            //PlayStation®Vita
+            $(".show").eq(3).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(1).stop().slideDown();
+            })
+            //移出
+            $(".show").eq(3).mouseleave(function () {
+                $(".nav-xialabox").eq(1).stop().slideUp();
+            })
+            //游戏
+            $(".show").eq(4).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(2).stop().slideDown();
+            })
+            $(".show").eq(4).mouseleave(function () {
+                //移出
+                $(".nav-xialabox").eq(2).stop().slideUp();
+            })
+            //PSN℠
+            $(".show").eq(7).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(3).stop().slideDown();
+            })
+            $(".show").eq(7).mouseleave(function () {
+                //移出
+                $(".nav-xialabox").eq(3).stop().slideUp();
+            })
+
+            // 下拉框添加事件
+
+//设置移入效果
+            $(".nav-xialabox").mouseenter(function () {
+                $(this).siblings().slideUp;
+                $(this).stop().slideDown();
+            })
+            //设置移出效果
+            $(".nav-xialabox").mouseleave(function () {
+                $(".nav-xialabox").stop().slideUp();
+            })
+
+
+        })
+    </script>
+
+    <!--头部导航-->
+    <div class="top-nav" id="top-nav">
+        <ul class="top-n-list">
+            <li><a class="show" href="home.html"><img src="../images/newps4_psLogo.png" alt="头部小图标"/><span>首页</span></a>
+            </li>
+            <li><a class="show" href="javascript:;" id="abc">PlayStation®4</a></li>
+            <li><a class="show" href="index2.html">PlayStation®VR</a></li>
+            <li><a class="show" href="javascript:;">PlayStation®Vita</a></li>
+            <li><a class="show" href="javascript:;">游戏</a></li>
+            <li><a class="show" href="javascript:;">销售与支持</a></li>
+            <li><a class="show" href="javascript:;">俱乐部</a></li>
+            <li><a class="show" href="javascript:;">PSN℠</a></li>
+        </ul>
+    </div>
+    <!--导航的下拉框-->
+    <!--第二个下拉盒子  PlayStation®4-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_ps4.png" alt=""/><span>PlayStation®4</span></a></li>
+            <li><a href="javascript:;"><img src="../images/gouwuche.png" alt=""/><span>主机与套装购买</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game_170213.png"
+                                            alt=""/><span>PlayStation®4游戏</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_sales.png" alt=""/><span>销售与支持</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_peijian_170213.png" alt=""/><span>配件</span></a></li>
+            <li><a href="javascript:;"><img src="../images/ps4-periphery_list.png" alt=""/><span>周边产品</span></a></li>
+
+        </ul>
+    </div>
+
+    <!--PlayStation®Vita  第三个li-->
+
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_psv.png" alt=""/><span>PlayStation®Vita</span></a>
+            </li>
+            <li><a href="javascript:;"><img src="../images/gouwuche.png" alt=""/><span>主机与套装购买</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game.png" alt=""/><span>PlayStation®Vita游戏</span></a>
+            </li>
+            <li><a href="javascript:;"><img src="../images/topbar_sales.png" alt=""/><span>销售与支持</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_peijian.png" alt=""/><span>配件</span></a></li>
+            <li><a href="javascript:;"><img src="../images/ps4-periphery_list.png" alt=""/><span>周边产品</span></a></li>
+
+        </ul>
+    </div>
+
+
+    <!--第五个li 游戏-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_game_170213.png"
+                                            alt=""/><span>PlayStation®4游戏</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game.png" alt=""/><span>PlayStation®Vita游戏</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <!---第八个li-  PSN℠-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/stroe_psn.png" alt=""/><span>PlayStation®Store</span></a></li>
+            <li><a href="javascript:;"><img src="../images/cuxiao_psn.png" alt=""/><span>促销信息</span></a></li>
+            <li><a href="javascript:;"><img src="../images/huiyuan_psn.png" alt=""/><span>会员指南</span></a></li>
+        </ul>
+    </div>
+    <!--头部结束-->
+</div>
+<!--顶栏结束-->
+<!--超级大盒子-->
+<div class="game-mian" id="bigbox">
+
+    <!--旋转木马-->
+    <div class="carouselGame" id="carouselGame">
+        <ul>
+            <li class="n1"><a href="javascript:;"><img src="../images/gamePicture-1.jpg" alt=""/></a>
+
+                <p>摩托世界大奖赛</p>
+            </li>
+            <li class="n2"><a href="javascript:;"><img src="../images/gamePicture-2.jpg" alt=""/></a>
+
+                <p>绝地潜兵</p>
+            </li>
+            <li class="n3"><a href="javascript:;"><img src="../images/gamePicture-3.jpg" alt=""/></a>
+
+                <p>艾希</p>
+            </li>
+            <li class="n4"><a href="javascript:;"><img src="../images/gamePicture-4.jpg" alt=""/></a>
+
+                <p>城市自由狂飙</p>
+            </li>
+            <li class="n5"><a href="javascript:;"><img src="../images/gamePicture-5.jpg" alt=""/></a>
+
+                <p>极速冒险2X</p>
+            </li>
+        </ul>
+        <ol>
+            <li class="cur1">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <div class="arrleft"></div>
+        <div class="arrright"></div>
+    </div>
+    <script src="../js/mmanimate.js"></script>
+    <script>
+        (function () {
+
+            var carouselGame = document.getElementById("carouselGame");
+            var ul = carouselGame.children[0];
+            var ulis = ul.children;
+            var ol = carouselGame.children[1];
+            var olis = ol.children;
+            var arrleft = carouselGame.children[2];
+            var arrright = carouselGame.children[3];
+            var count = 0;
+            var datas = [
+                {
+                    left: 260,
+                    top: 90,
+                    width: 850,
+                    height: 300,
+                    zIndex: 6,
+                    opacity: 1
+                },
+                {
+                    left: 0,
+                    top: 45,
+                    width: 546,
+                    height: 290,
+                    zIndex: 5,
+                    opacity: 0.8,
+                },
+                {
+                    left: -200,
+                    top: 105,
+                    width: 400,
+                    height: 200,
+                    zIndex: 3,
+                    opacity: 0.5,
+                },
+                {
+                    left: 1166,
+                    top: 105,
+                    width: 400,
+                    height: 200,
+                    zIndex: 5,
+                    opacity: 0.5,
+                },
+                {
+                    left: 820,
+                    top: 45,
+                    width: 546,
+                    height: 290,
+                    zIndex: 3,
+                    opacity: 0.8,
+                }
+            ]
+            var datasCopy = datas.concat();
+            var flag = true;
+            var timer = null;
+            var last = 0;
+            var suoyinzhi;
+            console.log(datasCopy);
+            carouselGame.onmouseover = function () {
+                animate(arrleft, {opacity: 1});
+                animate(arrright, {opacity: 1});
+                clearInterval(timer)
+            }
+            carouselGame.onmouseout = function () {
+                animate(arrleft, {opacity: 0});
+                animate(arrright, {opacity: 0});
+        autoMove()
+            }
+            getLacation();
+                autoMove();
+            function autoMove() {
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    arrright.click();
+                }, 2000)
+            }
+
+            arrright.onclick = function () {
+                for (var i = 0; i < olis.length; i++) {
+                    if (ulis[i].isanimate) {
+                        return
+                    }
+                    ;
+                    olis[i].className = "";
+                }
+                count++;
+                if (count > olis.length - 1) {
+                    count = 0;
+                }
+                olis[count].className = "cur1";
+                datas.unshift(datas.pop());
+                getLacation()
+            }
+            arrleft.onclick = function () {
+                for (var i = 0; i < olis.length; i++) {
+                    if (ulis[i].isanimate) {
+                        return
+                    }
+                    ;
+                    olis[i].className = "";
+                }
+                count--;
+                if (count < 0) {
+                    count = olis.length - 1;
+                }
+                olis[count].className = "cur1";
+                datas.push(datas.shift());
+                getLacation();
+            }
+            for (var i = 0; i < olis.length; i++) {
+                olis[i].index = i;
+                olis[i].onclick = function () {
+                    if (suoyinzhi == this.index) return;
+                    for (var i = 0; i < olis.length; i++) {
+                        olis[i].className = "";
+                    }
+                    olis[this.index].className = "cur1";
+                    //恢复上次调用乱。
+                    for (var j = 0; j < olis.length - last; j++) {
+                        datasCopy.push(datasCopy.shift());
+                    }
+                    count = this.index;
+                    for (var z = 0; z < this.index; z++) {
+                        datasCopy.push(datasCopy.shift());
+                    }
+                    last = this.index;
+                    suoyinzhi = this.index;
+                    getLacation2();
+                    datas = datasCopy.concat();
+                }
+            }
+            function getLacation2() {
+                for (var i = 0; i < datas.length; i++) {
+                    animate(ulis[i], datasCopy[i]);
+                }
+            }
+
+            function getLacation() {
+                for (var i = 0; i < datas.length; i++) {
+                    animate(ulis[i], datas[i]);
+                }
+            }
+
+
+        })();
+
+    </script>
+    <!--旋转木马结束-->
+
+
+    <!--主题盒子开始-->
+    <div class="gamebox">
+        <!--返回a链接-->
+        <div class="gotoBack banxin">
+            <a href="javascript:history.back();"><i></i>返回</a>
+        </div>
+
+        <!--本页主推游戏-->
+        <div class="game_content banxin clearfix" id="game_content">
+            <div class="game_text">本月主推游戏</div>
+            <!--3个小标题-->
+            <div class="cut-bar">
+                <ul>
+                    <li class="current"><a href="javascript:;">最新</a></li>
+                    <li class=""><a href="javascript:;">PlayStation®4游戏</a></li>
+                    <li class=""><a href="javascript:;">PlayStation®Vita游戏</a></li>
+                </ul>
+            </div>
+            <!--正文内容-->
+            <div class="img_content marginTop50">
+                <div class="game-titles " style="display:block; ">
+                    <ul class="g-top fl">
+                        <li class="g-title-1 fl">
+                            <a href="javascript:;">
+                                <img src="../images/g-n-1.jpg" alt=""/>
+                            </a>
+                            <span>PS4™</span>
+
+                            <h2>重力异想世界完结篇</h2>
+
+                            <h2 class="display">发售日期：2017年2月28日</h2>
+
+                            <h2 class="display">游戏类型：动作冒险类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-2.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>最后的守护者</h2>
+
+                            <h2 class="display">发售日期：2017年1月19日</h2>
+
+                            <h2 class="display">游戏类型：动作冒险类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-3.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>超酷节拍 音速</h2>
+
+                            <h2 class="display">发售日期：2017年2月16日</h2>
+
+                            <h2 class="display">游戏类型：音乐类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-4.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>最终幻想 15</h2>
+
+                            <h2 class="display">发售日期：2016年11月29日</h2>
+
+                            <h2 class="display">游戏类型：角色扮演类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-5.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>三国志13</h2>
+
+                            <h2 class="display">发售日期：2016年12月9日</h2>
+
+                            <h2 class="display">游戏类型：模拟类</h2>
+                        </li>
+
+                    </ul>
+                    <ul class="marginTop50 fl">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-6.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>真 三国无双7 帝国</h2>
+
+                            <h2 class="display">发售日期：2016年9月28日</h2>
+
+                            <h2 class="display">游戏类型：动作类</h2>
+                        </li>
+                        <li>
+                            <div class="gt-2 fl">
+                                <div class="g-pic2 fl">
+                                    <a href="javascript:;">
+                                        <img src="../images/g-n-8.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="g-txt fl">
+                                    <span>PS4®</span>
+
+                                    <h2>摩托世界大奖赛15</h2>
+
+                                    <h2 class="display">发售日期：2016年9月28日</h2>
+
+                                    <h2 class="display">游戏类型：竞速类</h2>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-9.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>迪默 最终演奏</h2>
+
+                            <h2 class="display">发售日期：2017年3月14日</h2>
+
+                            <h2 class="display">游戏类型：音乐类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-10.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>绝地潜兵</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：动作射击类 </h2>
+                        </li>
+                    </ul>
+                </div>
+                <div class="game-titles " style="display:none; ">
+                    <ul class="g-top fl">
+                        <li class="g-title-1 fl">
+                            <a href="javascript:;">
+                                <img src="../images/g-n-1.jpg" alt=""/>
+                            </a>
+                            <span>PS4™</span>
+
+                            <h2>重力异想世界完结篇</h2>
+
+                            <h2 class="display">发售日期：2017年2月28日</h2>
+
+                            <h2 class="display">游戏类型：动作冒险类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-2.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>最后的守护者</h2>
+
+                            <h2 class="display">发售日期：2017年1月19日</h2>
+
+                            <h2 class="display">游戏类型：动作冒险类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-1.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>舞之灵</h2>
+
+                            <h2 class="display">发售日期：2017年2月9日</h2>
+
+                            <h2 class="display">游戏类型：动作</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-4.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>最终幻想 15</h2>
+
+                            <h2 class="display">发售日期：2016年11月29日</h2>
+
+                            <h2 class="display">游戏类型：角色扮演类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-5.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>三国志13</h2>
+
+                            <h2 class="display">发售日期：2016年12月9日</h2>
+
+                            <h2 class="display">游戏类型：模拟类</h2>
+                        </li>
+
+                    </ul>
+                    <ul class="marginTop50 fl b0" style="display: block">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-6.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>真 三国无双7 帝国</h2>
+
+                            <h2 class="display">发售日期：2016年9月28日</h2>
+
+                            <h2 class="display">游戏类型：动作类</h2>
+                        </li>
+                        <li>
+                            <div class="gt-2 fl">
+                                <div class="g-pic2 fl">
+                                    <a href="javascript:;">
+                                        <img src="../images/g-n-8.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="g-txt fl">
+                                    <span>PS4®</span>
+
+                                    <h2>摩托世界大奖赛15</h2>
+
+                                    <h2 class="display">发售日期：2016年9月28日</h2>
+
+                                    <h2 class="display">游戏类型：竞速类</h2>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-2.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>3对3 街头篮球</h2>
+
+                            <h2 class="display">发售日期：2016年9月1日</h2>
+
+                            <h2 class="display">游戏类型：体类育竞技类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-10.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>绝地潜兵</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：动作射击类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-3.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>艾希</h2>
+
+                            <h2 class="display">发售日期：2016年11月18日</h2>
+
+                            <h2 class="display">游戏类型：动作类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-4.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>音量</h2>
+
+                            <h2 class="display">发售日期：2016年11月1日</h2>
+
+                            <h2 class="display">游戏类型：冒险潜行类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-5.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>城堡风暴</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：策略类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-6.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>飞速骑行</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：竞速类 </h2>
+                        </li>
+                    </ul>
+                    <ul class="marginTop50 fl b1" style="display: none">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-11.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>真 三国无双7 帝国</h2>
+
+                            <h2 class="display">发售日期：2016年9月28日</h2>
+
+                            <h2 class="display">游戏类型：动作类</h2>
+                        </li>
+                        <li>
+                            <div class="gt-2 fl">
+                                <div class="g-pic2 fl">
+                                    <a href="javascript:;">
+                                        <img src="../images/g-n-8.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="g-txt fl">
+                                    <span>PS4®</span>
+
+                                    <h2>摩托世界大奖赛15</h2>
+
+                                    <h2 class="display">发售日期：2016年9月28日</h2>
+
+                                    <h2 class="display">游戏类型：竞速类</h2>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-2.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>3对3 街头篮球</h2>
+
+                            <h2 class="display">发售日期：2016年9月1日</h2>
+
+                            <h2 class="display">游戏类型：体类育竞技类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-10.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>绝地潜兵</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：动作射击类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-3.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>艾希</h2>
+
+                            <h2 class="display">发售日期：2016年11月18日</h2>
+
+                            <h2 class="display">游戏类型：动作类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-4.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>音量</h2>
+
+                            <h2 class="display">发售日期：2016年11月1日</h2>
+
+                            <h2 class="display">游戏类型：冒险潜行类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-5.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>城堡风暴</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：策略类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-6.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>飞速骑行</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：竞速类 </h2>
+                        </li>
+                    </ul>
+                    <ul class="marginTop50 fl b2" style="display: none">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-11.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>真 三国无双7 帝国</h2>
+
+                            <h2 class="display">发售日期：2016年9月28日</h2>
+
+                            <h2 class="display">游戏类型：动作类</h2>
+                        </li>
+                        <li>
+                            <div class="gt-2 fl">
+                                <div class="g-pic2 fl">
+                                    <a href="javascript:;">
+                                        <img src="../images/g-n-8.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="g-txt fl">
+                                    <span>PS4®</span>
+
+                                    <h2>摩托世界大奖赛15</h2>
+
+                                    <h2 class="display">发售日期：2016年9月28日</h2>
+
+                                    <h2 class="display">游戏类型：竞速类</h2>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-2.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>3对3 街头篮球</h2>
+
+                            <h2 class="display">发售日期：2016年9月1日</h2>
+
+                            <h2 class="display">游戏类型：体类育竞技类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-10.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>绝地潜兵</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：动作射击类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-3.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>艾希</h2>
+
+                            <h2 class="display">发售日期：2016年11月18日</h2>
+
+                            <h2 class="display">游戏类型：动作类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-4.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>音量</h2>
+
+                            <h2 class="display">发售日期：2016年11月1日</h2>
+
+                            <h2 class="display">游戏类型：冒险潜行类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-5.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>城堡风暴</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：策略类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-6.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>飞速骑行</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：竞速类 </h2>
+                        </li>
+                    </ul>
+                    <ul class="marginTop50 fl b3" style="display: none">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-11.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>真 三国无双7 帝国</h2>
+
+                            <h2 class="display">发售日期：2016年9月28日</h2>
+
+                            <h2 class="display">游戏类型：动作类</h2>
+                        </li>
+                        <li>
+                            <div class="gt-2 fl">
+                                <div class="g-pic2 fl">
+                                    <a href="javascript:;">
+                                        <img src="../images/g-n-8.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="g-txt fl">
+                                    <span>PS4®</span>
+
+                                    <h2>摩托世界大奖赛15</h2>
+
+                                    <h2 class="display">发售日期：2016年9月28日</h2>
+
+                                    <h2 class="display">游戏类型：竞速类</h2>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-2.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>3对3 街头篮球</h2>
+
+                            <h2 class="display">发售日期：2016年9月1日</h2>
+
+                            <h2 class="display">游戏类型：体类育竞技类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-10.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>绝地潜兵</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：动作射击类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-3.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>艾希</h2>
+
+                            <h2 class="display">发售日期：2016年11月18日</h2>
+
+                            <h2 class="display">游戏类型：动作类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-4.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>音量</h2>
+
+                            <h2 class="display">发售日期：2016年11月1日</h2>
+
+                            <h2 class="display">游戏类型：冒险潜行类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-5.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>城堡风暴</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：策略类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-6.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>飞速骑行</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：竞速类 </h2>
+                        </li>
+                    </ul>
+                    <ul class="marginTop50 fl b4" style="display: none">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-11.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>真 三国无双7 帝国</h2>
+
+                            <h2 class="display">发售日期：2016年9月28日</h2>
+
+                            <h2 class="display">游戏类型：动作类</h2>
+                        </li>
+                        <li>
+                            <div class="gt-2 fl">
+                                <div class="g-pic2 fl">
+                                    <a href="javascript:;">
+                                        <img src="../images/g-n-8.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="g-txt fl">
+                                    <span>PS4®</span>
+
+                                    <h2>摩托世界大奖赛15</h2>
+
+                                    <h2 class="display">发售日期：2016年9月28日</h2>
+
+                                    <h2 class="display">游戏类型：竞速类</h2>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-2.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>3对3 街头篮球</h2>
+
+                            <h2 class="display">发售日期：2016年9月1日</h2>
+
+                            <h2 class="display">游戏类型：体类育竞技类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-10.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>绝地潜兵</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：动作射击类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-3.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>艾希</h2>
+
+                            <h2 class="display">发售日期：2016年11月18日</h2>
+
+                            <h2 class="display">游戏类型：动作类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-4.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>音量</h2>
+
+                            <h2 class="display">发售日期：2016年11月1日</h2>
+
+                            <h2 class="display">游戏类型：冒险潜行类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-5.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>城堡风暴</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：策略类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-6.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>飞速骑行</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：竞速类 </h2>
+                        </li>
+                    </ul>
+                    <ul class="marginTop50 fl b5" style="display: none">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-11.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>真 三国无双7 帝国</h2>
+
+                            <h2 class="display">发售日期：2016年9月28日</h2>
+
+                            <h2 class="display">游戏类型：动作类</h2>
+                        </li>
+                        <li>
+                            <div class="gt-2 fl">
+                                <div class="g-pic2 fl">
+                                    <a href="javascript:;">
+                                        <img src="../images/g-n-8.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="g-txt fl">
+                                    <span>PS4®</span>
+
+                                    <h2>摩托世界大奖赛15</h2>
+
+                                    <h2 class="display">发售日期：2016年9月28日</h2>
+
+                                    <h2 class="display">游戏类型：竞速类</h2>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-2.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>3对3 街头篮球</h2>
+
+                            <h2 class="display">发售日期：2016年9月1日</h2>
+
+                            <h2 class="display">游戏类型：体类育竞技类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-10.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>绝地潜兵</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：动作射击类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-3.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>艾希</h2>
+
+                            <h2 class="display">发售日期：2016年11月18日</h2>
+
+                            <h2 class="display">游戏类型：动作类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-4.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>音量</h2>
+
+                            <h2 class="display">发售日期：2016年11月1日</h2>
+
+                            <h2 class="display">游戏类型：冒险潜行类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-5.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>城堡风暴</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：策略类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-6.jpg" alt=""/>
+                            </a>
+                            <span>PS4®</span>
+
+                            <h2>飞速骑行</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：竞速类 </h2>
+                        </li>
+                    </ul>
+                    <!--按钮-->
+                    <div class="square" style="display: none">
+                        <span class="current">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                    </div>
+                </div>
+                <div class="game-titles " style="display:none; ">
+                    <ul class="g-top fl">
+                        <li class="g-title-1 fl">
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-1.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>迪默 最终演奏</h2>
+
+                            <h2 class="display">发售日期：2017年2月28日</h2>
+
+                            <h2 class="display">游戏类型：音乐类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-3.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>超酷节拍 音速</h2>
+
+                            <h2 class="display">发售日期：2017年1月19日</h2>
+
+                            <h2 class="display">游戏类型：音乐类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-n-10.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>绝地潜兵</h2>
+
+                            <h2 class="display">发售日期：2017年1月19日</h2>
+
+                            <h2 class="display">游戏类型:动作射击类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-2.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>空之轨迹（第一章）全面进化版</h2>
+
+                            <h2 class="display">发售日期：2016年11月29日</h2>
+
+                            <h2 class="display">游戏类型：角色扮演类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-3.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>航海王 航海无双3</h2>
+
+                            <h2 class="display">发售日期：2016年12月9日</h2>
+
+                            <h2 class="display">游戏类型：动作类</h2>
+                        </li>
+
+                    </ul>
+                    <ul class="marginTop50 fl">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-4.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>黑衣剑士 失落之歌</h2>
+
+                            <h2 class="display">发售日期：2016年9月28日</h2>
+
+                            <h2 class="display">游戏类型：角色扮演类</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-9.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>虚空之虫</h2>
+
+                            <h2 class="display">发售日期：2017年3月14日</h2>
+
+                            <h2 class="display">游戏类型：动作冒险类游戏</h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-5.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>空间竞赛-极速</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：竞速类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-5.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>音量</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：冒险潜行类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-p4-6.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>城堡风暴</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：策略类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-6.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>临终：重生试炼</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：解谜类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-7.jpg" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>城市自由狂飙</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：竞速类 </h2>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/g-pv-8.png" alt=""/>
+                            </a>
+                            <span>PS Vita</span>
+
+                            <h2>四元素大冒险</h2>
+
+                            <h2 class="display">发售日期：2016年9月8日</h2>
+
+                            <h2 class="display">游戏类型：动作冒险类游戏 </h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--回到顶部-->
+        <div class="goTop">
+            <a href="javascript:scroll(0,0);"><img src="../images/gt.png" alt=""/></a>
+        </div>
+    </div>
+</div>
+<!--主题盒子结束-->
+
+<!--侧栏开始-->
+<div class="gameRank" id="gameRank">
+    <div class="gameRankLeft">
+        <div class="gameRank_top">
+            <div class="gameRank_top_left">新游排行榜</div>
+            <a href="javascript:;" class="gameRank_top_right">更多»</a>
+        </div>
+        <div class="gameRank_main" id="gameRank_main">
+            <h3>排名 游戏</h3>
+            <ul>
+                <li>
+                    <div class="box1"><span class="spec">1</span>
+                        <a href="javascript:;">刀锋铁骑</a>
+                    </div>
+
+
+                    <div class="box2">
+                        <p class="mainBar"><b></b><a href="javascript:;">进入官网</a></p>
+                        <span></span>
+                        <p class="downGame"><i></i><a href="javascript:;">下载游戏</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="box1">
+                        <span class="spec">2</span>
+                        <a href="javascript:;">战争雷霆</a>
+                    </div>
+
+                    <div class="box2">
+                        <p class="mainBar"><b></b><a href="javascript:;">进入官网</a></p>
+                        <span></span>
+                        <p class="downGame"><i></i><a href="javascript:;">下载游戏</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="box1">
+                        <span class="spec">3</span>
+                        <a href="javascript:;">冒险岛</a>
+                    </div>
+
+                    <div class="box2">
+                        <p class="mainBar"><b></b><a href="javascript:;">进入官网</a></p>
+                        <span></span>
+
+                        <p class="downGame"><i></i><a href="javascript:;">下载游戏</a></p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box1">
+                        <span>4</span>
+                        <a href="javascript:;">勇者大冒险</a>
+                    </div>
+
+                    <div class="box2">
+                        <p class="mainBar"><b></b><a href="javascript:;">进入官网</a></p>
+                        <span></span>
+
+                        <p class="downGame"><i></i><a href="javascript:;">下载游戏</a></p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box1">
+                        <span>5</span>
+                        <a href="javascript:;">兽人必须死</a>
+                    </div>
+
+                    <div class="box2">
+                        <p class="mainBar"><b></b><a href="javascript:;">进入官网</a></p>
+                        <span></span>
+
+                        <p class="downGame"><i></i><a href="javascript:;">下载游戏</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="box1">
+                        <span>6</span>
+                        <a href="javascript:;">火源计划</a>
+                    </div>
+
+                    <div class="box2">
+                        <p class="mainBar"><b></b><a href="javascript:;">进入官网</a></p>
+                        <span></span>
+
+                        <p class="downGame"><i></i><a href="javascript:;">下载游戏</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="box1"><span>7</span><a href="javascript:;">流放之路</a></div>
+
+                    <div class="box2">
+                        <p class="mainBar"><b></b><a href="javascript:;">进入官网</a></p>
+                        <span></span>
+
+                        <p class="downGame"><i></i><a href="javascript:;">下载游戏</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="box1">
+                        <span>8</span>
+                        <a href="javascript:;">全职大师</a>
+                    </div>
+
+
+                    <div class="box2">
+                        <p class="mainBar"><b></b><a href="javascript:;">进入官网</a></p>
+                        <span></span>
+
+                        <p class="downGame"><i></i><a href="javascript:;">下载游戏</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bigbox02" id="bigbox02">
+        <img src="" alt=""  id="imgbox" class="imgbox"/ >
+    </div>
+    <div class="showList" id="showList">想入菲菲</div>
+</div>
+<script>
+    $(function () {
+        var $pic1 = $(".gameRankLeft li div.box2");
+//            console.log($box2[1]);
+        for (var i = 0; i < $pic1.length; i++) {
+            $pic1.eq(i).css("backgroundImage", "url(../images/gamePic/cospan-1/" + (i + 1) + ".jpg)")
+        }
+        var $li1 = $(".gameRankLeft li");
+        $pic1.eq(0).stop().slideDown();
+        $li1.mouseenter(function () {
+            var index = $(this).index()
+            $pic1.hide()
+            $pic1.eq(index).stop().show();
+        })
+//        $li1.children(".box2").mousemove(function())
+//    })
+        var $a1 = $(".gameRankLeft .box1>a")
+        var datas1 = [
+            {titleName: "最后的守护者"},
+            {titleName: "超酷节拍"},
+            {titleName: "最终幻想 "},
+            {titleName: "三国志"},
+            {titleName: "三国无双"},
+            {titleName: "摩托世界大奖赛"},
+            {titleName: "迪默演奏"},
+            {titleName: "绝地潜兵"}
+        ];
+        for (var i = 0; i < datas1.length; i++) {
+            $a1.eq(i).html(datas1[i].titleName);
+        }
+
+    })
+    var gameRank_main=document.getElementById("gameRank_main");
+    var lis=gameRank_main.children[1].children;
+    var gameRank=document.getElementById("gameRank");
+    var imgbox=document.getElementById("imgbox");
+    var bigbox02=document.getElementById("bigbox02");
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].children[1].index=i;
+        lis[i].children[1].onmouseout = function () {
+            this.children[1].style.display = "none";
+            bigbox02.style.display="none";
+        };
+        lis[i].children[1].onmousemove = function (e) {
+            bigbox02.style.display="block";
+            imgbox.src='../images/gamePic/cospan-1/big' + (this.index + 1) + '.jpg'
+            this.children[1].style.display = "block";
+            var e = e || window.event;
+            var x = e.clientX - lis[this.index].offsetLeft- this.children[1].offsetWidth / 2;
+            var y = e.clientY - lis[this.index].offsetTop-gameRank.offsetTop-20- this.children[1].offsetHeight / 2;
+
+            //检测x和y的极限值
+            x = x < 0 ? 0 : x;
+            y = y < 0 ? 0 : y;
+
+            var maxLeft = this.offsetWidth - this.children[1].offsetWidth;
+            var maxTop = this.offsetHeight - this.children[1].offsetHeight;
+
+            x = x > maxLeft ? maxLeft : x;
+            y = y > maxTop ? maxTop : y;
+
+            //将x和y设置给mask
+            this.children[1].style.left = x + "px";
+            this.children[1].style.top = y + "px";
+
+            var biliX = (imgbox.offsetWidth - bigbox02.offsetWidth) / maxLeft;
+            var biliY = (imgbox.offsetHeight - bigbox02.offsetHeight) / maxTop;
+            imgbox.style.left = -biliX * x + "px";
+            imgbox.style.top = -biliY * y + "px";
+
+        }
+        var showList=document.getElementById("showList");
+        $("#gameRank").mouseenter(function(){
+            $(this).stop().animate({
+                left:0
+            },1000)
+        })
+        $("#gameRank").mouseleave(function(){
+            $(this).stop().animate({
+                left:-250
+            },500)
+        })
+    }
+</script>
+<!--侧栏结束-->
+
+
+
+
+<script src="../js/jquery-1.12.4.js"></script>
+<script>
+
+
+    //三个按钮的变色。不要删除即可
+    $(function () {
+        $(".cut-bar>ul>li>a").css("color", "#000");
+        $(".cut-bar>ul>li>a").mouseenter(function () {
+
+            var $index = $(this);
+            $index.parent().siblings().children().css("opacity", "1");
+            $index.css("opacity", ".25")
+        });
+        $(".cut-bar>ul>li").eq(0).mouseenter(function () {
+            var $index = $(this);
+            $index.siblings().css("border-bottom", "0px");
+            $index.css("border-bottom", "3px solid red");
+            $index.addClass("biankuang")
+
+        });
+        $(".cut-bar>ul>li").eq(1).mouseenter(function () {
+            var $index = $(this);
+            $index.siblings().css("border-bottom", "0px");
+            $index.css("border-bottom", "3px solid green");
+            $index.addClass("biankuang")
+        });
+        $(".cut-bar>ul>li").eq(2).mouseenter(function () {
+            var $index = $(this);
+            $index.siblings().css("border-bottom", "0px");
+            $index.css("border-bottom", "3px solid blue");
+            $index.addClass("biankuang")
+        });
+
+
+    });
+
+    //三个按钮切换正文部分
+    $(function () {
+        $(".cut-bar>ul>li").eq(0).click(function () {
+            $(".marginTop50>div").eq(0).siblings().css("display", "none");
+
+            $(".marginTop50>div").stop().eq(0).fadeToggle(500, "swing", function () {
+                $(".marginTop50>div").eq(0).css("display", "block");
+            });
+
+        });
+
+        $(".cut-bar>ul>li").eq(1).click(function () {
+            $(".marginTop50>div").eq(1).siblings().css("display", "none");
+
+            $(".marginTop50>div").stop().eq(1).fadeToggle(500, "swing", function () {
+                $(".marginTop50>div").eq(1).css("display", "block");
+                $(".square").css("display", "block")
+            });
+        });
+
+        $(".cut-bar>ul>li").eq(2).click(function () {
+            $(".marginTop50>div").eq(2).siblings().css("display", "none");
+
+            $(".marginTop50>div").stop().eq(2).fadeToggle(500, "swing", function () {
+                $(".marginTop50>div").eq(2).css("display", "block");
+            });
+        })
+    });
+
+    $(function () {
+
+        for (var i = 0; i < $(".square>span").length; i++) {
+            $(".square>span").eq(i).click(function () {
+                var neq = $(this).index();
+                $(this).siblings("span").css("font-weight", "normal");
+                $(this).css("font-weight", "bold");
+                $(this).css("color", "#5e5e5e");
+                $(this).siblings("span").css("background", "#fff");
+                $(this).css("background", "#e5e5e5");
+                $(this).css("border", "0");
+                $(this).siblings("span").css("border", "1px solid #1568BF");
+
+
+                $(".b" + neq + "").siblings(".marginTop50").css("display", "none");
+                $(".b" + neq + "").css("display", "block");
+            })
+        }
+    })
+
+</script>
+
+<!--底部开始-->
+<div class="new_footer">
+    <div id="footer">
+        <!--底部头部-->
+        <div class="footer_top cf">
+            <div class="w960">
+                <span style="float:left">分享到社交平台</span>
+
+                <div style="margin:13px 0px 0px 10px"
+                     class="bdshare-button-style0-24bdsharebuttonbox fl cf bdshare-button-style0-24"
+                     data-bd-bind="1491466496503">
+                    <a class="bds_weixin" href="#" data-cmd="weixin" title=""></a>
+                    <a class="bds_tsina" href="#" data-cmd="tsina" title=""></a>
+                    <a class="bds_tqq" href="#" data-cmd="tqq" title="分享到微博"></a>
+                    <a class="bds_qzone" href="#" data-cmd="qzone" title="分享到微博"></a>
+                </div>
+                <span style="float: left; margin-left: 30px">本网站包含推销商品和服务的广告</span>
+
+                <div style="position: relative; float: right">
+                    <a class="weibo_share_btn share_btn" href="javascript:;" target="_blank">
+                        <img src="../images/newps4_weibo_icon.png" data-bd-imgshare-binded="1">
+                    </a>
+                    <a class="weibo_share_btn share_btn" href="javascript:;" target="_blank">
+                        <img src="../images/newps4_weixin_icon.png" data-bd-imgshare-binded="1">
+                    </a>
+                    <span>关注我们</span>
+                    <br>
+                    <em style="display: none"><img src="../images/weixin_hover.jpg"></em>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--底部主体-->
+    <div class="footer_maintain cf">
+        <div class=w960>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PlayStation&reg;4</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4</a>
+                <dd><a href="javascript:;" target=_self>购买详情</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4 游戏</a>
+                <dd><a href="javascript:;" target=_self>销售与支持</a>
+                <dd><a href="javascript:;" target=_self>配件</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_seif>PlayStation&reg;VR</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PlayStation&reg;Vita</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita</a>
+                <dd><a href="javascript:;" target=_self>购买详情</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita 游戏</a>
+                <dd><a href="javascript:;" target=_self>销售与支持</a>
+                <dd><a href="javascript:;" target=_self>配件</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>游戏</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4 游戏</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita 游戏</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>销售与支持</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>俱乐部</a>
+                <dd><a href="javascript:;" target=_self>官方活动</a>
+                <dd><a href="javascript:;" target=_self>促销活动</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PSN℠</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Store</a>
+                <dd><a href="javascript:;" target=_self>促销信息</a>
+                <dd><a href="javascript:;" target=_self>会员指南</a>
+                <dd><a href="" target=_self></a></dd>
+            </dl>
+        </div>
+    </div>
+
+    <!--底部的底部-->
+    <div class="footer_bottom cf">
+        <div class=w960>
+            <div class=footer-logo>
+                <a id=footer-regional-icon>索尼互动娱乐（上海）有限公司</a>
+                <img id=footer-copyright alt="" src="../images/All_copyright_CS5_WH_v2.png"></div>
+            <div class=right-container>
+                <ul id=footer-others class="footer-menu cf">
+                    <li><a id=privacyPolicy href="javascript:;" target=_self>隐私权政策</a></li>
+                    <li><a id=termsConditions href="javascript:;" target=_self>条款和条件</a></li>
+                    <li><a id=footer_sitemap href="javascript:;" target=_self>网站地图</a></li>
+                    <li><a id=footer_contact href="javascript:;" target=_self>联系我们</a></li>
+                </ul>
+            </div>
+            <div class=icp><a href="javascript:;" target=_blank>沪ICP备14040797号-1</a></div>
+            <div style="margin: 0px auto; width: 237px" class=icp><a class="cf" href="javascript:;" target=_blank>
+                <img style="float: left" src="../images/beian_logo.png" data-bd-imgshare-binded="1">
+                <span style="float: left">沪公网安备 31010102002927号</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- ???-->
+</div>
+<!--底部结束-->
+
+</body>
+</html>

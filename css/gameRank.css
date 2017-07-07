@@ -1,0 +1,189 @@
+@charset "UTF-8";
+.gameRank {
+    position: fixed;
+    left:-250px ;
+    top:200px;
+    width: 250px;
+    height: 466px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: "\5b8b\4f53",sans-serif;
+    color: #999;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor:pointer;
+    z-index: 99;
+}
+
+.gameRankLeft,.gameRankCenter,.gameRankright {
+    float: left;
+    width: 280px;
+    height: 436px;
+    padding: 0 10px;
+    margin: 17px 0 8px;
+    border-left: 1px solid #e2e2e2;
+    margin-left: -1px;
+}
+.gameRank_top {
+    float: left;
+    width: 207px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    height: 18px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.gameRank_top .gameRank_top_left {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #555;
+    font-weight: bold;
+}
+.gameRank_top .gameRank_top_right {
+    float:right;
+    color: #707e91;
+    text-decoration: none;
+}
+.gameRank_main {
+    float: left;
+}
+.gameRank_main ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+}
+.gameRank_main h3 {
+    float: left;
+    width: 212px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 9px;
+}
+.gameRank_main ul li {
+    float: left;
+    width: 222px;
+    overflow: visible;
+    padding: 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+.gameRank_main li span {
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 2px 15px 0 4px;
+    line-height: 12px;
+    text-align: center;
+    border: 1px solid #999;
+    background: #fff;
+    position: relative;
+    z-index: 66;
+}
+.gameRank_main li span.spec {
+    color: #fff;
+    border: 1px solid #ff4e00;
+    background: #ff4e00;
+}
+.gameRank_main div.box2 {
+    position: relative;
+    width: 222px;
+    height: 124px;
+    overflow: hidden;
+    padding: 1px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor:pointer;
+}
+.gameRank_main .box2 .mainBar {
+    float: left;
+    width: 97px;
+    height: 13px;
+    line-height: 13px;
+    padding: 7px 0 8px;
+    color: yellow;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 90px;
+    background:black;
+    opacity:0.4;
+
+}
+.gameRank_main .box2{
+    position:relative;
+display: none;
+}
+.gameRank_main .box2 .mainBar b {
+    display: inline-block;
+    font-size: 0.1em;
+    margin: 0 5px;
+    vertical-align: top;
+    background-image: url(../images/ost_rank_sp.png);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+}
+.gameRank_main .box2 .downGame {
+    float: left;
+    width: 97px;
+    height: 13px;
+    line-height: 13px;
+    padding: 7px 0 8px;
+    color: #aaa;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 20px;
+    background:black;
+    opacity:0.4;
+    color: blue;
+}
+.gameRank_main .box2 .downGame i {
+    display: inline-block;
+    font-size: 0.1em;
+    margin: 0 5px;
+    vertical-align: top;
+    background-image: url(../images/ost_rank_sp.png);
+    background-repeat: no-repeat;
+    background-position: -14px 0px;
+    width: 13px;
+    height: 13px;
+}
+.gameRank .bigbox02{
+    width: 950px;
+    height: 500px;
+    background-color:yellow;
+    position:absolute;
+    left: 290px;
+    top:-30px;
+    overflow:hidden;
+    display: none;
+}
+.gameRank .bigbox02 img {
+    position:absolute;
+}
+.gameRank .box2 span {
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    background:yellow;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    display: none;
+}
+.gameRank .showList {
+    position:absolute;
+    left:250px;
+    top:0px;
+    width:40px;
+    font-size: 28px;
+    font-family: "LiSu";
+    color: #eb22a1;
+    /*height: 467px;*/
+    height: 337px;
+    text-align: center;
+    background:url(../images/gamePic/cospan-1/timg.jpg) no-repeat -497px -97px ;
+    padding-top: 130px;
+
+}

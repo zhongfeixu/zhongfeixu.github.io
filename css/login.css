@@ -1,0 +1,356 @@
+@charset "utf-8";
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+#main_content {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 2;
+
+}
+#login_list {
+    width: 605px;
+    margin: 120px auto;
+}
+#login_list h1, #find_password h1 {
+    text-align: center;
+    color: #000;
+    padding-bottom: 10px;
+}
+.login_list_nav {
+    width: 392px;
+    height: 37px;
+}
+.login_list_nav ul li {
+    width: 176px;
+    height: 37px;
+    float: left;
+    border: 1px #ccc solid;
+    background-color: #ccc;
+    text-align: center;
+}
+.login_list_nav ul li a {
+    width: 176px;
+    height: 37px;
+    color: #fff;
+    line-height: 37px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+.login_list_nav ul li.action {
+    background-color: #fff;
+    border-bottom: none;
+    border-top: 2px #1568BF solid;
+}
+.login_list_nav ul li.action a {
+    color: #000;
+}
+.login_list_main {
+    width: 605px;
+    background: #f5f5f5 no-repeat;
+    border: 1px #ccc solid;
+}
+.regestier_main {
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+.list_main {
+    padding-bottom: 20px;
+}
+.login_list_main h3 {
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 7px;
+    color: #ccc;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.regestier_main span {
+    display: inline;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    text-align: right;
+    width: 90px;
+    color: #1568BF;
+    font-size: 14px;
+}
+#login_list .login_list_main input.txta {
+    width: 207px;
+    height: 34px;
+    padding-left: 38px;
+    padding-right: 2px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+    line-height: 34px;
+}
+
+.login_list_main .login_name, #find_password .box_zoom .find_name {
+    background: url(../images/newps4_loginbg.png) no-repeat;
+}
+
+input {
+    outline: none;
+}
+
+
+.login_list_main i {
+    font-style: normal;
+    padding-left: 18px;
+    color: #666;
+}
+#login_list .login_list_main input.txta {
+    width: 207px;
+    height: 34px;
+    padding-left: 38px;
+    padding-right: 2px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+    line-height: 34px;
+}
+
+.login_list_main .login_password {
+    background: url(../images/newps4_registerbg.png) no-repeat;
+}
+
+#passd_status {
+    width: 200px;
+    height: 30px;
+    margin-left: 50px;
+}
+.chosse_sex {
+    margin: 0 20px;
+}
+.regestier_main label {
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.list_main label {
+    color: #666;
+}
+
+label {
+    cursor: default;
+}
+.chosse_sex {
+    margin: 0 20px;
+}
+.regestier_main select.chosse_city, .regestier_main select.chosse_sth {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    height: 35px;
+    margin: 0 5px 10px 5px;
+    padding: 5px 0;
+    position: relative;
+    width: 110px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.regestier_main .newuser_phone {
+    background: url(../images/newps4_registerphonebg.png) no-repeat;
+}
+.regestier_main .check_code {
+    width: 87px;
+    height: 30px;
+    background: url(../images/newps4_registercheckcode.png) no-repeat;
+    padding: 0 3px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+    line-height: 30px;
+}
+.checkcode_pic, .checkcode_pic1 {
+    width: 69px;
+    height: 23px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.login_list_main h3 {
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 7px;
+    color: #ccc;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.user_head_zoom {
+    width: 121px;
+    height: 121px;
+    background: none;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.cf {
+}
+.cf:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.upload_head {
+    height: 35px;
+    vertical-align: middle;
+}
+.regestier_main .real_name, .real_family {
+    width: 237px;
+    height: 35px;
+    background: url(../images/newps4_registerhome.png) no-repeat;
+    padding: 0 6px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+    line-height: 35px;
+}
+
+.regestier_main select.chosse_city, .regestier_main select.chosse_sth {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    height: 35px;
+    margin: 0 5px 10px 5px;
+    padding: 5px 0;
+    position: relative;
+    width: 110px;
+}
+.regestier_main .confirm_read {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.regestier_main .ps_rule {
+    color: #ff0000;
+}
+.regestier_main .unregestier_pass {
+    background: url(../images/newps4_unregestierbtn.jpg) no-repeat;
+}
+.regestier_main .user_regestier_btn {
+    margin-left: 50px;
+    display: block;
+    width: 140px;
+    height: 43px;
+}
+
+
+/*登入界面*/
+.login_list_nav {
+    width: 392px;
+    height: 37px;}
+
+
+.login_list_nav ul li.action {
+    background-color: #fff;
+    border-bottom: none;
+    border-top: 2px #1568BF solid;
+}
+.login_list_nav ul li {
+    width: 176px;
+    height: 37px;
+    float: left;
+    border: 1px #ccc solid;
+    background-color: #ccc;
+    text-align: center;
+}
+.login_list_nav ul li.action a {
+    color: #000;
+}
+
+.login_list_nav ul li a {
+    width: 176px;
+    height: 37px;
+    color: #fff;
+    line-height: 37px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+.login_list_main {
+    width: 605px;
+    background: #f5f5f5 no-repeat;
+    border: 1px #ccc solid;
+}
+.list_main {
+    padding-bottom: 20px;
+    margin-top:20px;
+}
+
+.paddingL20 {
+    padding-left: 20px !important;
+}
+.login_list_main i.warning, #forgotNameTip {
+    background: url(../images/warning.png) no-repeat left;
+    padding-left: 16px;
+}
+.login_list_main i {
+    font-style: normal;
+    padding-left: 18px;
+    color: #666;
+}
+#login_list .login_list_main input.txta {
+    width: 207px;
+    height: 34px;
+    padding-left: 38px;
+    padding-right: 2px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+    line-height: 34px;
+}
+.login_list_main .login_password {
+    background: url(../images/newps4_registerbg.png) no-repeat;
+}
+#login_list .login_list_main a#forgotpasswored_btn {
+    margin-left: -20px;
+}
+
+.list_main .forgetpass {
+    color: #666;
+    text-decoration: underline;
+}
+.btnstyle {
+    width: 141px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    background-color: #227cd3;
+    background-image: -webkit-linear-gradient(top, #008ae3, #0070c7);
+    background-image: -moz-linear-gradient(top, #008ae3, #0070c7);
+    background-image: -ms-linear-gradient(top, #008ae3, #0070c7);
+    background-image: -o-linear-gradient(top, #008ae3, #0070c7);
+    background-image: linear-gradient(top, #008ae3, #0070c7);
+    display: block;
+}
+.btnstyle:hover, .btnstyle2:hover, .btnstyle3:hover, .btnstyle4:hover {
+    background: #0070c7;
+    color: #fff;
+}
+.login_list_main i.warning, #forgotNameTip {
+    background: url(../images/warning.png) no-repeat left;
+    padding-left: 16px;
+}

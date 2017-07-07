@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>psvr_middle</title>
+    <link rel="stylesheet" href="../css/commen.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/css2-1.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/css2-2.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/gameCss.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/xuanzhuanmuma.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/head.css"/>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script src="../jQuery/jquery-1.12.4.js"></script>
+
+    <script src="../js/commen.js"></script>
+    <script src="../js/jquery-1.11.1.js"></script>
+    <!--<script src="../js/videojs-ie8.min.js"></script>-->
+    <!--<script src="js/index2-2.js"></script>-->
+
+    <!--页面上半部分的js-->
+    <script type="text/javascript">
+        $(function () {
+            //克隆第一张图片
+            $(".scr_1").append($(".carousel").clone());
+
+            var count = 0;
+            var width = $(".scr_1>li").width();
+
+            $("#right").click(function () {
+
+                if (count == 2) {
+                    $(".scr_1").css("left", "0");
+                    count = 0;
+                }
+                count++;
+                $(".scr_1").stop().animate({
+                    left: width * -count,
+                }, 200)
+            })
+
+            $("#left").click(function () {
+                if (count == 0) {
+
+                    $(".scr_1").css("left", "-2698px");
+                    console.log("aa");
+                    count = 2;
+                }
+                count--;
+                $(".scr_1").stop().animate({
+                    left: -width * count,
+                }, 200)
+            })
+
+
+            $(".list1").mouseenter(function () {
+
+                $("#bar1").css("z-Index", "0");
+                $("#bar1_on").css({
+                    "z-Index": "1",
+                    "width": "200px",
+                    "height": "250px"
+                });
+
+            })
+            $(".list1").mouseleave(function () {
+
+                $("#bar1").css("z-Index", "1");
+                $("#bar1_on").last().css({
+                    "z-Index": "0",
+                    "width": "180px",
+                    "height": "230px"
+                });
+
+            })
+
+            $(".list2").mouseenter(function () {
+
+                $("#bar2").css("z-Index", "0");
+                $("#bar2_on").css({
+                    "z-Index": "1",
+                    "width": "200px",
+                    "height": "250px"
+                });
+
+
+            })
+            $(".list2").mouseleave(function () {
+
+                $("#bar2").css("z-Index", "1");
+                $("#bar2_on").last().css({
+                    "z-Index": "0",
+                    "width": "180px",
+                    "height": "230px"
+                });
+
+
+            })
+
+            $(".list3").mouseenter(function () {
+
+                $("#bar3").css("z-Index", "0");
+                $("#bar3_on").css({
+                    "z-Index": "1",
+                    "width": "200px",
+                    "height": "250px"
+                });
+
+            })
+            $(".list3").mouseleave(function () {
+
+                $("#bar3").css("z-Index", "1");
+                $("#bar3_on").last().css({
+                    "z-Index": "0",
+                    "width": "180px",
+                    "height": "230px"
+                });
+
+            })
+
+            $(".list4").mouseenter(function () {
+
+                $("#bar4").css("z-Index", "0");
+                $("#bar4_on").css({
+                    "z-Index": "1",
+                    "width": "200px",
+                    "height": "250px"
+                });
+
+            })
+            $(".list4").mouseleave(function () {
+
+                $("#bar4").css("z-Index", "1");
+                $("#bar4_on").last().css({
+                    "z-Index": "0",
+                    "width": "180px",
+                    "height": "230px"
+                });
+
+            })
+
+            $(".list5").mouseenter(function () {
+
+                $("#bar5").css("z-Index", "0");
+                $("#bar5_on").css({
+                    "z-Index": "1",
+                    "width": "200px",
+                    "height": "250px"
+                });
+
+            })
+            $(".list5").mouseleave(function () {
+
+                $("#bar5").css("z-Index", "1");
+                $("#bar5_on").last().css({
+                    "z-Index": "0",
+                    "width": "180px",
+                    "height": "230px"
+                });
+
+            })
+
+            $(".list6").mouseenter(function () {
+
+                $("#bar6").css("z-Index", "0");
+                $("#bar6_on").css({
+                    "z-Index": "1",
+                    "width": "200px",
+                    "height": "250px"
+                });
+
+            })
+            $(".list6").mouseleave(function () {
+
+                $("#bar6").css("z-Index", "1");
+                $("#bar6_on").last().css({
+                    "z-Index": "0",
+                    "width": "180px",
+                    "height": "230px"
+                });
+
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+
+<!--顶部开始-->
+<div class="top_big_box">
+    <!--头部通栏-->
+    <div class="top">
+        <img class="fr" src="../images/sonylogo.jpg" alt=""/>
+        <div class="fr"><a href="login.html">注册</a><span>&nbsp;|&nbsp;</span><a href="login_in.html">登入</a></div>
+    </div>
+
+    <script type="text/javascript" src="../jQuery/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        //ready
+        $(function () {
+            //PlayStation®4
+            $(".show").eq(1).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(0).stop().slideDown();
+            })
+            $(".show").eq(1).mouseleave(function () {
+                $(".nav-xialabox").eq(0).stop().slideUp();
+            })
+            //PlayStation®Vita
+            $(".show").eq(3).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(1).stop().slideDown();
+            })
+            //移出
+            $(".show").eq(3).mouseleave(function () {
+                $(".nav-xialabox").eq(1).stop().slideUp();
+            })
+            //游戏
+            $(".show").eq(4).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(2).stop().slideDown();
+            })
+            $(".show").eq(4).mouseleave(function () {
+                //移出
+                $(".nav-xialabox").eq(2).stop().slideUp();
+            })
+            //PSN℠
+            $(".show").eq(7).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(3).stop().slideDown();
+            })
+            $(".show").eq(7).mouseleave(function () {
+                //移出
+                $(".nav-xialabox").eq(3).stop().slideUp();
+            })
+
+            // 下拉框添加事件
+
+//设置移入效果
+            $(".nav-xialabox").mouseenter(function () {
+                $(this).siblings().slideUp;
+                $(this).stop().slideDown();
+            })
+            //设置移出效果
+            $(".nav-xialabox").mouseleave(function () {
+                $(".nav-xialabox").stop().slideUp();
+            })
+
+
+        })
+    </script>
+
+    <!--头部导航-->
+    <div class="top-nav" id="top-nav">
+        <ul class="top-n-list">
+            <li><a class="show" href="home.html"><img src="../images/newps4_psLogo.png" alt="头部小图标"/><span>首页</span></a>
+            </li>
+            <li><a class="show" href="javascript:;"id="abc">PlayStation®4</a></li>
+            <li><a class="show" href="index2.html">PlayStation®VR</a></li>
+            <li><a class="show" href="javascript:;">PlayStation®Vita</a></li>
+            <li><a class="show" href="game.html">游戏</a></li>
+            <li><a class="show" href="javascript:;">销售与支持</a></li>
+            <li><a class="show" href="javascript:;">俱乐部</a></li>
+            <li><a class="show" href="javascript:;">PSN℠</a></li>
+        </ul>
+    </div>
+    <!--导航的下拉框-->
+    <!--第二个下拉盒子  PlayStation®4-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_ps4.png" alt=""/><span>PlayStation®4</span></a></li>
+            <li><a href="javascript:;"><img src="../images/gouwuche.png" alt=""/><span>主机与套装购买</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game_170213.png"
+                                            alt=""/><span>PlayStation®4游戏</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_sales.png" alt=""/><span>销售与支持</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_peijian_170213.png" alt=""/><span>配件</span></a></li>
+            <li><a href="javascript:;"><img src="../images/ps4-periphery_list.png" alt=""/><span>周边产品</span></a></li>
+
+        </ul>
+    </div>
+
+    <!--PlayStation®Vita  第三个li-->
+
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_psv.png" alt=""/><span>PlayStation®Vita</span></a>
+            </li>
+            <li><a href="javascript:;"><img src="../images/gouwuche.png" alt=""/><span>主机与套装购买</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game.png" alt=""/><span>PlayStation®Vita游戏</span></a>
+            </li>
+            <li><a href="javascript:;"><img src="../images/topbar_sales.png" alt=""/><span>销售与支持</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_peijian.png" alt=""/><span>配件</span></a></li>
+            <li><a href="javascript:;"><img src="../images/ps4-periphery_list.png" alt=""/><span>周边产品</span></a></li>
+
+        </ul>
+    </div>
+
+
+    <!--第五个li 游戏-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_game_170213.png"
+                                            alt=""/><span>PlayStation®4游戏</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game.png" alt=""/><span>PlayStation®Vita游戏</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <!---第八个li-  PSN℠-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/stroe_psn.png" alt=""/><span>PlayStation®Store</span></a></li>
+            <li><a href="javascript:;"><img src="../images/cuxiao_psn.png" alt=""/><span>促销信息</span></a></li>
+            <li><a href="javascript:;"><img src="../images/huiyuan_psn.png" alt=""/><span>会员指南</span></a></li>
+        </ul>
+    </div>
+    <!--头部结束-->
+</div>
+<!--顶部结束-->
+
+
+<!--VR盒子开始-->
+<div class="vr-box">
+<!--页面上半部分-->
+<!--PartOne 轮播图部分-->
+
+<div class="carou">
+    <div class="screen">
+        <ul class="scr_1">
+            <li>
+                <div class="carousel">
+                    <img src="../images/psvr_pic2.jpg" class="psvr_pic2" alt=""/>
+                    <a href="javascript:"><img src="../images/psvr_pic2a.png" class="psvr_pic2a" alt=""/></a>
+                    <a href="javascript:"><img src="../images/psvr_pic1.png" class="psvr_pic1" alt=""/></a>
+                    <a href="javascript:"><img src="../images/psvr_pic14.png" class="psvr_pic14" alt=""/></a>
+                    <a href="javascript:"><img src="../images/psvr_pic14a.png" class="psvr_pic14a" alt=""/></a>
+                    <a href="javascript:"><img src="../images/psvr_prod_img_170313.png" class="psvr_prod_img_170313" alt=""/></a>
+                </div>
+            </li>
+            <li>
+                <a href="#blockItem5"> <img src="../images/psvr_pic62.jpg" class="psvr_pic62" alt=""/></a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="arr">
+        <span id="left">&lt;</span>
+        <span id="right">&gt;</span>
+    </div>
+</div>
+<!--PartTwo蓝色栏-->
+<div class="nav">
+    <ul id="navul">
+        <li class="list1">
+            <a href="javascript:" class="jump1">
+                <img src="../images/bar1.jpg" class="bar1 bar" id="bar1" alt=""/>
+                <img src="../images/bar1_on.jpg" class="bar1_on bar" id="bar1_on" alt=""/>
+            </a>
+        </li>
+        <li class="list2"><a href="javascript:" class="jump1">
+            <img src="../images/bar2.jpg" class="bar1" id="bar2" alt=""/>
+            <img src="../images/bar2_on.jpg" class="bar1_on" id="bar2_on" alt=""/>
+        </a></li>
+        <li class="list3"><a href="javascript:" class="jump1">
+            <img src="../images/bar3.jpg" class="bar1" id="bar3" alt=""/>
+            <img src="../images/bar3_on.jpg" class="bar1_on" id="bar3_on" alt=""/>
+        </a></li>
+        <li class="list4"><a href="javascript:" class="jump1">
+            <img src="../images/bar4.jpg" class="bar1" id="bar4" alt=""/>
+            <img src="../images/bar4_on.jpg" class="bar1_on" id="bar4_on" alt=""/>
+        </a></li>
+        <li class="list5"><a href="javascript:" class="jump1">
+            <img src="../images/bar5.jpg" class="bar1" id="bar5" alt=""/>
+            <img src="../images/bar5_on.jpg" class="bar1_on" id="bar5_on" alt=""/>
+        </a></li>
+        <li class="list6"><a href="javascript:" class="jump1">
+            <img src="../images/bar6.jpg" class="bar1" id="bar6" alt=""/>
+            <img src="../images/bar6_on.jpg" class="bar1_on" id="bar6_on" alt=""/>
+        </a></li>
+    </ul>
+</div>
+
+<!--页面下半部分-->
+<!--PartOne-->
+<!--blockItem1-4放入一个ul的4个li中，然后将这个ul放入一个命名为jump的div中。制作跳楼效果-->
+<div class="jump">
+    <ul>
+        <!--1 新颖的游戏感觉-->
+        <li>
+            <div class="blockItem1">
+                <img class="fullImg" src="../images/psvr_pic16.jpg" alt=""/>
+
+                <div class="wordpage">
+                    <img class="fullImg" src="../images/psvr_pic15.png" alt=""/>
+                </div>
+                <div class="vrpic">
+                    <img class="fullImg" src="../images/psvr_pic19.png" alt=""/>
+                </div>
+            </div>
+        </li>
+
+        <!--2 和家人朋友一起玩-->
+        <li>
+            <div class="blockItem2">
+                <img class="fullImg" src="../images/psvr_pic18.jpg" alt=""/>
+
+                <div class="vrpic">
+                    <img class="fullImg" src="../images/psvr_pic23.png" alt=""/>
+                </div>
+                <div class="wordpage">
+                    <img class="fullImg" src="../images/psvr_pic17.png" alt=""/>
+                </div>
+            </div>
+        </li>
+
+        <!--3 除了VR游戏，还有不同的游戏方式-->
+        <li>
+            <div class="blockItem3">
+                <img class="fullImg" src="../images/psvr_pic25_161222.jpg" alt=""/>
+
+                <div class="wordpage">
+                    <!--将图片包裹在一个a链接中，可以点击跳转-->
+                    <a href="javascript:;">
+                        <img class="fullImg" src="../images/psvr_pic28.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <!--4 最新动态-->
+        <li>
+            <div class="blockItem4">
+                <img class="fullImg" src="../images/psvr_pic27.jpg" alt=""/>
+
+                <div class="maintain_block1">
+                    <!--将图片包裹在一个a链接中，可以点击跳转-->
+                    <a href="javascript:;">
+                        <img class="fullImg" src="../images/psvr_pic30.jpg" alt=""/>
+                    </a>
+                </div>
+
+                <div class="maintain_block2">
+                    <!--将图片包裹在一个a链接中，可以点击跳转-->
+                    <a href="javascript:;">
+                        <img class="fullImg" src="../images/psvr_pic31_161222.jpg" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <!--电梯的小按钮，点次按钮，可以让页面切换-->
+    <ol class="littleBtn">
+        <li class="colorBlack">新颖</li>
+        <li>友好</li>
+        <li>多样</li>
+        <li>最新动态</li>
+    </ol>
+</div>
+
+<!--PartTwo 官方视频-->
+<div class="blockItem5" id="blockItem5">
+    <img class="fullImg" src="../images/psvr_pic26.jpg" alt=""/>
+
+    <div class="vedio">
+        <img class="fullImg" src="../images/psvr_pic29.png" alt=""/>
+    </div>
+    <p class="btm_attention">上市时产品外观可能有变化，请关注官网信息</p>
+
+    <!--视频部分-->
+    <div class="videoBox">
+        <video id="my-video" class="video-js" controls preload="auto" width="600" height="400">
+               <!--poster="../images/video.png" data-setup="{}">-->
+            <!--<source src="a.mp4" type="video/mp4">-->
+            <!--<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">-->
+            <source src="../video/psvr.mp4">
+            <!--<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">-->
+            <!--<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">-->
+            <!--<p class="vjs-no-js">-->
+                <!--To view this video please enable JavaScript, and consider upgrading to a web browser that-->
+                <!--<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>-->
+            <!--</p>-->
+        </video>
+    </div>
+
+</div>
+
+<!--PartThree 移入移出的分享框-->
+<div class="shareBox">
+    <!--分享条-->
+    <div class="shareBar">
+        <a href="javascript:;"><img class="more" src="../images/share02.png"></a><img src="../images/share01.png">
+    </div>
+    <!--点击more，可以弹出的分享框-->
+    <!--<div class="shareTo">-->
+        <!--<img src="../images/share.PNG">-->
+    <!--</div>-->
+</div>
+
+</div>
+<!--VR盒子结束-->
+
+<!--底部开始-->
+<div class="new_footer">
+    <div id="footer">
+        <!--底部头部-->
+        <div class="footer_top cf">
+            <div class="w960">
+                <span style="float:left">分享到社交平台</span>
+
+                <div style="margin:13px 0px 0px 10px"
+                     class="bdshare-button-style0-24bdsharebuttonbox fl cf bdshare-button-style0-24"
+                     data-bd-bind="1491466496503">
+                    <a class="bds_weixin" href="#" data-cmd="weixin" title=""></a>
+                    <a class="bds_tsina" href="#" data-cmd="tsina" title=""></a>
+                    <a class="bds_tqq" href="#" data-cmd="tqq" title="分享到微博"></a>
+                    <a class="bds_qzone" href="#" data-cmd="qzone" title="分享到微博"></a>
+                </div>
+                <span style="float: left; margin-left: 30px">本网站包含推销商品和服务的广告</span>
+
+                <div style="position: relative; float: right">
+                    <a class="weibo_share_btn share_btn" href="javascript:;" target="_blank">
+                        <img src="../images/newps4_weibo_icon.png" data-bd-imgshare-binded="1">
+                    </a>
+                    <a class="weibo_share_btn share_btn" href="javascript:;" target="_blank">
+                        <img src="../images/newps4_weixin_icon.png" data-bd-imgshare-binded="1">
+                    </a>
+                    <span>关注我们</span>
+                    <br>
+                    <em style="display: none"><img src="../images/weixin_hover.jpg"></em>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--底部主体-->
+    <div class="footer_maintain cf">
+        <div class=w960>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PlayStation&reg;4</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4</a>
+                <dd><a href="javascript:;" target=_self>购买详情</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4 游戏</a>
+                <dd><a href="javascript:;" target=_self>销售与支持</a>
+                <dd><a href="javascript:;" target=_self>配件</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_seif>PlayStation&reg;VR</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PlayStation&reg;Vita</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita</a>
+                <dd><a href="javascript:;" target=_self>购买详情</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita 游戏</a>
+                <dd><a href="javascript:;" target=_self>销售与支持</a>
+                <dd><a href="javascript:;" target=_self>配件</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>游戏</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4 游戏</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita 游戏</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>销售与支持</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>俱乐部</a>
+                <dd><a href="javascript:;" target=_self>官方活动</a>
+                <dd><a href="javascript:;" target=_self>促销活动</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PSN℠</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Store</a>
+                <dd><a href="javascript:;" target=_self>促销信息</a>
+                <dd><a href="javascript:;" target=_self>会员指南</a>
+                <dd><a href="" target=_self></a></dd>
+            </dl>
+        </div>
+    </div>
+
+    <!--底部的底部-->
+    <div class="footer_bottom cf">
+        <div class=w960>
+            <div class=footer-logo>
+                <a id=footer-regional-icon>索尼互动娱乐（上海）有限公司</a>
+                <img id=footer-copyright alt="" src="../images/All_copyright_CS5_WH_v2.png"></div>
+            <div class=right-container>
+                <ul id=footer-others class="footer-menu cf">
+                    <li><a id=privacyPolicy href="javascript:;" target=_self>隐私权政策</a></li>
+                    <li><a id=termsConditions href="javascript:;" target=_self>条款和条件</a></li>
+                    <li><a id=footer_sitemap href="javascript:;" target=_self>网站地图</a></li>
+                    <li><a id=footer_contact href="javascript:;" target=_self>联系我们</a></li>
+                </ul>
+            </div>
+            <div class=icp><a href="javascript:;" target=_blank>沪ICP备14040797号-1</a></div>
+            <div style="margin: 0px auto; width: 237px" class=icp><a class="cf" href="javascript:;" target=_blank>
+                <img style="float: left" src="../images/beian_logo.png" data-bd-imgshare-binded="1">
+                <span style="float: left">沪公网安备 31010102002927号</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- ???-->
+</div>
+<!--底部结束-->
+
+<!--页面下半部分的js-->
+<script>
+    //PartOne 页面跳楼效果（js方法）
+    //1 获取元素
+    var jump = document.getElementsByClassName("jump");
+    var ul = jump[0].children[0];//ul
+    var ulis = ul.children;//ul中的li
+    var ol = jump[0].children[1];//获取ol
+    olis = ol.children;//ol中的li
+    //2 点击小按钮让大图对应运动
+    for (var i = 0; i < olis.length; i++) {
+        olis[i].index = i;//设置自定义属性，记录小按钮的索引值
+        olis[i].onclick = function () {
+            //排他法让小按钮变色
+            for (var j = 0; j < olis.length; j++) {
+                olis[j].className = ""
+            }
+            this.className = "colorBlack";
+            //让ul大图运动
+            animate4(ul, {top: -this.index * ulis[this.index].offsetHeight});
+        }
+    }
+
+    //PartTwo 鼠标移入图片，显示分享条；点击分享条，显示分享框（jQuery方法）
+    //1 移入时，让每个图片显示分享条
+    $(".fullImg").mouseenter(function () {
+        //让shareBox插到这个图片的前面,且透明度变低，显示分享条
+        $(".shareBox").insertBefore(this).css("opacity", "0.9").children("shareBar").css("display", "bolck");
+    }).mouseleave(function () {   //当鼠标移出图片时，移出shareBox
+        $(this).children("shareBox").remove();
+    })
+    //2 鼠标移入分享条中的more， 让shareBox中的shareTo显示且可以切换
+    $(".more").click(function () {
+        $(this).parent().parent().siblings().stop().slideToggle(300);
+    })
+
+
+
+
+    //PartThree 播放视屏
+    //1 点击官方视屏的video盒子，让videoBox显示
+    $(".vedio").click(function () {
+        $(".videoBox").show()
+    })
+    //2 点击blockItem5,让视频影藏
+    $(".blockItem5>.fullImg").click(function () {
+        $(".videoBox").hide();
+    })
+    //3 videoBox视屏播放部分
+//    var myPlayer = videojs("my-video");
+//    myPlayer.ready(function () {
+//        myPlayer.play();
+//    });
+
+</script>
+
+<script src="../js/common.js"></script>
+<!--<script src="../js/index.js"></script>-->
+<script src="../js/animate.js"></script>
+<!--<script src="../js/carousel.js"></script>-->
+
+</body>
+</html>

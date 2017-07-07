@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/head.css"/>
+    <link rel="stylesheet" href="../css/footer.css" >
+    <link rel="stylesheet" href="../css/login.css" >
+
+
+</head>
+
+
+<body onload="load()">
+
+
+<div class="top_big_box">
+    <!--头部通栏-->
+    <div class="top">
+        <img class="fr" src="../images/sonylogo.jpg" alt=""/>
+        <div class="fr"><a href="login.html">注册</a><span>&nbsp;|&nbsp;</span><a href="login_in.html">登入</a></div>
+    </div>
+
+    <script type="text/javascript" src="../jQuery/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        //ready
+        $(function () {
+            //PlayStation®4
+            $(".show").eq(1).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(0).stop().slideDown();
+            })
+            $(".show").eq(1).mouseleave(function () {
+                $(".nav-xialabox").eq(0).stop().slideUp();
+            })
+            //PlayStation®Vita
+            $(".show").eq(3).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(1).stop().slideDown();
+            })
+            //移出
+            $(".show").eq(3).mouseleave(function () {
+                $(".nav-xialabox").eq(1).stop().slideUp();
+            })
+            //游戏
+            $(".show").eq(4).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(2).stop().slideDown();
+            })
+            $(".show").eq(4).mouseleave(function () {
+                //移出
+                $(".nav-xialabox").eq(2).stop().slideUp();
+            })
+            //PSN℠
+            $(".show").eq(7).mouseenter(function () {
+                //移入
+                $(".nav-xialabox").eq(3).stop().slideDown();
+            })
+            $(".show").eq(7).mouseleave(function () {
+                //移出
+                $(".nav-xialabox").eq(3).stop().slideUp();
+            })
+
+            // 下拉框添加事件
+
+//设置移入效果
+            $(".nav-xialabox").mouseenter(function(){
+                $(this).siblings().slideUp;
+                $(this).stop().slideDown();
+            })
+            //设置移出效果
+            $(".nav-xialabox").mouseleave(function(){
+                $(".nav-xialabox").stop().slideUp();
+            })
+
+
+        })
+    </script>
+
+    <!--头部导航-->
+    <div class="top-nav" id="top-nav">
+        <ul class="top-n-list">
+            <li><a class="show" href="home.html"><img src="../images/newps4_psLogo.png" alt="头部小图标"/><span>首页</span></a></li>
+            <li><a class="show" href="javascript:;" id="abc">PlayStation®4</a></li>
+            <li><a class="show" href="index2.html">PlayStation®VR</a></li>
+            <li><a class="show" href="javascript:;">PlayStation®Vita</a></li>
+            <li><a class="show" href="game.html">游戏</a></li>
+            <li><a class="show" href="javascript:;">销售与支持</a></li>
+            <li><a class="show" href="javascript:;">俱乐部</a></li>
+            <li><a class="show" href="javascript:;">PSN℠</a></li>
+        </ul>
+    </div>
+    <!--导航的下拉框-->
+    <!--第二个下拉盒子  PlayStation®4-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_ps4.png" alt=""/><span>PlayStation®4</span></a></li>
+            <li><a href="javascript:;"><img src="../images/gouwuche.png" alt=""/><span>主机与套装购买</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game_170213.png" alt=""/><span>PlayStation®4游戏</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_sales.png" alt=""/><span>销售与支持</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_peijian_170213.png" alt=""/><span>配件</span></a></li>
+            <li><a href="javascript:;"><img src="../images/ps4-periphery_list.png" alt=""/><span>周边产品</span></a></li>
+
+        </ul>
+    </div>
+
+    <!--PlayStation®Vita  第三个li-->
+
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_psv.png" alt=""/><span>PlayStation®Vita</span></a></li>
+            <li><a href="javascript:;"><img src="../images/gouwuche.png" alt=""/><span>主机与套装购买</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game.png" alt=""/><span>PlayStation®Vita游戏</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_sales.png" alt=""/><span>销售与支持</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_peijian.png" alt=""/><span>配件</span></a></li>
+            <li><a href="javascript:;"><img src="../images/ps4-periphery_list.png" alt=""/><span>周边产品</span></a></li>
+
+        </ul>
+    </div>
+
+
+    <!--第五个li 游戏-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/topbar_game_170213.png" alt=""/><span>PlayStation®4游戏</span></a></li>
+            <li><a href="javascript:;"><img src="../images/topbar_game.png" alt=""/><span>PlayStation®Vita游戏</span></a></li>
+        </ul>
+    </div>
+
+    <!------第八个li-----  PSN℠-->
+    <div class="nav-xialabox">
+        <ul>
+            <li><a href="javascript:;"><img src="../images/stroe_psn.png" alt=""/><span>PlayStation®Store</span></a></li>
+            <li><a href="javascript:;"><img src="../images/cuxiao_psn.png" alt=""/><span>促销信息</span></a></li>
+            <li><a href="javascript:;"><img src="../images/huiyuan_psn.png" alt=""/><span>会员指南</span></a></li>
+        </ul>
+    </div>
+    <!--头部结束-->
+</div>
+
+
+
+<!--注册bg-->
+<div id="main_content" >
+    <div id="login_list">
+        <h1>欢迎登录Playstation®官方俱乐部</h1>
+        <div class="login_list_nav">
+            <ul>
+                <li><a class="token_inherit" href="login_in.html">用户登录</a></li>
+                <li class="action"><a class="token_inherit" href="javascript:;">用户注册</a></li>
+            </ul>
+        </div>
+        <div class="login_list_main">
+            <div class="list_main regestier_main">
+                <h3>以下为必填内容</h3>
+                <form  id="myform" enctype="multipart/form-data"  method="post">
+                    <span>用户名</span><input id="user_email" type="text" class="newuser_name login_name txta regestier_check" name="email" value="请输入邮箱号"style="font-size: 14px;color: #999;">
+                    <i id="wrong"></i><br/>
+                    <span>密码</span><input id="user_password" type="password" class="newuser_password login_password txta regestier_check" name="password">
+                    <i id="wrongA"></i><br/>
+                    <div id="passd_status" class=""></div>
+                    <span>确认密码</span><input id="again_password" type="password" class="newuser_againpassword login_password txta regestier_check">
+                    <i id="wrongB"></i><br/>
+                    <div class="s_sex">
+                        <span>性别</span>
+                        <input type="radio" class="chosse_sex"  value="1" checked="checked" name="sexuality"><label>男</label>
+                        <input type="radio" class="chosse_sex"  value="0" name="sexuality"><label>女</label>
+                        <br/>
+                    </div>
+                    <div> <span>所在省市</span>
+                        <select id="user_province" class="chosse_sth diyuchosse_sth" name="provinceId" onchange="changeCity()">
+                            <option value="0">请选择</option>
+                        </select>
+                        <!--<label class="list_main_label">城市</label>-->
+                        <select id="user_city" class="chosse_sth diyuchosse_sth regestier_check" name="cityId" >
+                            <option value="0">请选择</option>
+                        </select><i class=""></i><br/>
+                    </div>
+
+
+                    <span>手机</span><input id="user_phone" type="text" class="newuser_phone txta regestier_check" value="" maxLength="11" name="phone">
+                    <i id="wrongC"></i><br/>
+
+                    <span>验证码</span><input id="user_code" type="text" class="check_code" maxLength="4" name="validateCode">
+                    <p class="checkcode_pic"><img src="../images/valicode.jpg"></p>
+                    <a id="change_checkcoed" href="javascript:;">换张图片</a> <i class=""></i><br/>
+
+                    <h3>以下为选填内容</h3>
+
+                    <div class="user_head_zoom cf">
+                        <img id="headImage" src="../images/defaultheard.jpg" style="width:130px;height:130px"/>
+                        <div style="font-size: 1.17em;color: #999;width: 300px;position: relative;left: 135px;bottom: 100px;">
+                            <div id="filesizeinf"></div>仅支持JPG、PNG、JPEG格式，文件小于2M</div>
+                    </div>
+                    <div class="upload_head cf">
+                        <span>上传头像</span>
+                        <input id="file_btn" class="file_btn" type="file" name="headimgfile" multiple="multiple">
+                        <input id="uesrhead_submit_btn" class="uesrhead_submit_btn" type="button" value="上传">
+                    </div>
+                    <span>真实姓名</span><input id="user_realname" type="text" class="real_name" maxLength="50" name="realName"><i></i><br/>
+                    <span>家庭住址</span><input id="user_address" type="text" class="real_family" maxLength="45" name="homeAddress"><br/>
+
+                    <span>收入（元/月）</span><select id="user_package" class="chosse_sth" name="incomelevelId">
+                    <option value="">请选择</option>
+                    <option value="">每月倒贴</option>
+                    <option value="">2000-3999元</option>
+                    <option value="">4000-5999元</option>
+                    <option value="">6000-7999元</option>
+                    <option value="">8000-9999元</option>
+                    <option value="">10000-20000元</option>
+                    <option value="">20001元以上</option>
+
+
+
+                </select><br/>
+                    <span>职业分类</span><select id="user_career" class="chosse_sth" name="occupationClassificationId">
+                    <option value="">请选择</option>
+                    <option value="">学生</option>
+                    <option value="">普通职员</option>
+                    <option value="">专业人士(医生、律师、工程师等)</option>
+                    <option value="">私营业主</option>
+                    <option value="">销售人员</option>
+                    <option value="">技术人员</option>
+                    <option value="">管理人员</option>
+                    <option value="">其他</option>
+                    <option value="">退休</option>
+
+                </select><br/>
+
+                    <input id="sceconfirm_read" class="confirm_read" type="checkbox" name="isSubscribeSceEmail" checked/>
+                    <label>SIE邮件订阅</label><br/>
+                    <input id="confirm_read" class="confirm_read" type="checkbox"/>
+                    <label>我已阅读并接受<a class="ps_rule" href="member-term.htm" target="_blank">《PlayStation®俱乐部会员条款》</a>、
+                        <a class="ps_rule" href="pim.htm" target="_blank">《PlayStation®俱乐部保密政策》</a>、
+                        <a class="ps_rule" href="member-come-notice.htm" target="_blank">《PlayStation®俱乐部入会须知》</a>
+                    </label><br/>
+                    <input type="hidden" id="inviterId_input" name="inviterId" value=""/>
+                    <a id="userregestier_btn" class="user_regestier_btn unregestier_pass" href="javascript:;"></a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<!--注册end-->
+
+
+
+
+<!--底部-->
+
+
+
+<div class="new_footer">
+    <div id="footer">
+        <!--底部头部-->
+        <div class="footer_top cf">
+            <div class="w960">
+                <span style="float:left">分享到社交平台</span>
+                <div style = "margin:13px 0px 0px 10px" class="bdshare-button-style0-24bdsharebuttonbox fl cf bdshare-button-style0-24" data-bd-bind="1491466496503">
+                    <a class="bds_weixin" href="#" data-cmd="weixin" title=""></a>
+                    <a class="bds_tsina" href="#" data-cmd="tsina" title=""></a>
+                    <a class="bds_tqq" href="#" data-cmd="tqq" title="分享到微博"></a>
+                    <a class="bds_qzone" href="#" data-cmd="qzone" title="分享到微博"></a>
+                </div>
+                <span style="float: left; margin-left: 30px">本网站包含推销商品和服务的广告</span>
+                <div style="position: relative; float: right">
+                    <a class="weibo_share_btn share_btn" href="javascript:;" target="_blank">
+                        <img src="../images/newps4_weibo_icon.png" data-bd-imgshare-binded="1">
+                    </a>
+                    <a class="weibo_share_btn share_btn" href="javascript:;" target="_blank">
+                        <img src="../images/newps4_weixin_icon.png" data-bd-imgshare-binded="1">
+                    </a>
+                    <span>关注我们</span>
+                    <br>
+                    <em style="display: none"><img src="../images/weixin_hover.jpg"></em>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--底部主体-->
+    <div class="footer_maintain cf">
+        <div class=w960>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PlayStation&reg;4</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4</a>
+                <dd><a href="javascript:;" target=_self>购买详情</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4 游戏</a>
+                <dd><a href="javascript:;" target=_self>销售与支持</a>
+                <dd><a href="javascript:;" target=_self>配件</a> </dd></dl>
+            <dl>
+                <dt><a href="javascript:;" target=_seif>PlayStation&reg;VR</a></dt></dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PlayStation&reg;Vita</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita</a>
+                <dd><a href="javascript:;" target=_self>购买详情</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita 游戏</a>
+                <dd><a href="javascript:;" target=_self>销售与支持</a>
+                <dd><a href="javascript:;" target=_self>配件</a> </dd></dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>游戏</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;4 游戏</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Vita 游戏</a> </dd></dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>销售与支持</a> </dt></dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>俱乐部</a>
+                <dd><a href="javascript:;" target=_self>官方活动</a>
+                <dd><a href="javascript:;" target=_self>促销活动</a>
+                </dd></dl>
+            <dl>
+                <dt><a href="javascript:;" target=_self>PSN℠</a>
+                <dd><a href="javascript:;" target=_self>PlayStation&reg;Store</a>
+                <dd><a href="javascript:;" target=_self>促销信息</a>
+                <dd><a href="javascript:;" target=_self>会员指南</a>
+                <dd><a href="" target=_self></a></dd></dl>
+        </div>
+    </div>
+
+    <!--底部的底部-->
+    <div class="footer_bottom cf">
+        <div class=w960>
+            <div class=footer-logo>
+                <a id=footer-regional-icon>索尼互动娱乐（上海）有限公司</a>
+                <img id=footer-copyright alt="" src="../images/All_copyright_CS5_WH_v2.png"> </div>
+            <div class=right-container>
+                <ul id=footer-others class="footer-menu cf">
+                    <li><a id=privacyPolicy href="javascript:;" target=_self>隐私权政策</a> </li>
+                    <li><a id=termsConditions href="javascript:;" target=_self>条款和条件</a> </li>
+                    <li><a id=footer_sitemap href="javascript:;" target=_self>网站地图</a> </li>
+                    <li><a id=footer_contact href="javascript:;" target=_self>联系我们</a> </li>
+                </ul>
+            </div>
+            <div class=icp><a href="javascript:;" target=_blank>沪ICP备14040797号-1</a></div>
+            <div style="margin: 0px auto; width: 237px" class=icp><a class="cf" href="javascript:;" target=_blank >
+                <img style="float: left" src="../images/beian_logo.png" data-bd-imgshare-binded="1">
+                <span style="float: left">沪公网安备 31010102002927号</span></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--script代码-->
+    <script>
+        var user_email = document.getElementById("user_email");
+        var myform = document.getElementById("myform");
+
+        var wrong = document.getElementById("wrong");
+        var yanzheng = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+        //验证用户名
+        user_email.onfocus = function () {
+            if (this.value == "请输入邮箱号") {
+                this.value = "";
+            }
+        }
+        user_email.onblur = function () {
+
+            //使用正则验证邮箱的格式
+            if (yanzheng.test(this.value)) {
+                wrong.className = " ";
+                wrong.innerText = " ";
+
+            } else {
+                wrong.innerText = "请输入正确的Email地址";
+                wrong.className = "warning";
+
+            }
+
+        }
+
+
+
+        //密码强弱
+        var passd_status = document.getElementById("passd_status");
+        var regs =/^[a-zA-Z0-9!@#$%^&*()_+|{}?><\-\]\\[\/]*$/;
+        var user_password = document.getElementById("user_password");
+        user_password.onblur = function () {
+
+            if(this.value.length < 8){
+                wrongA.innerText = "密码长度必须在8-16位之间";
+                wrongA.className = "warning";
+            }
+            else if(16 < this.value.length >= 8){
+                passd_status.className = "status_r";
+                wrongA.innerText = "";
+                wrongA.className = "";
+
+            }else if(this.value.length < 16){
+                passd_status.className = "status_z";
+                wrongA.innerText = "";
+                wrongA.className = "";
+
+            }else{
+                passd_status.className = "status_q";
+                wrongA.innerText = "";
+                wrongA.className = "";
+            }
+
+        }
+
+
+        //确认密码
+        //验证密码
+        var wrongB = document.getElementById("wrongB");
+        var again_password = document.getElementById("again_password");
+
+        again_password.onblur = function() {
+            if (this.value == user_password.value) {
+                wrongB.className = " ";
+            } else {
+                wrongB.innerText = "密码错误，请重新输入";
+                wrongB.className = "warning";
+            }
+        }
+
+
+        //验证手机
+//        /^(1(([3578][0-9])|(47)))\d{8}$/
+        var wrongC = document.getElementById("wrongC");
+        var user_phone = document.getElementById("user_phone");
+        var regsPhone =/^(1(([3578][0-9])|(47)))\d{8}$/;
+
+        user_phone.onblur = function() {
+            if (regsPhone.test(this.value)) {
+                wrongC.className = " ";
+            } else {
+                wrongC.innerText = "请输入正确的手机号";
+                wrongC.className = "warning";
+            }
+        }
+
+
+
+
+
+
+//选择省市
+        var province=document.getElementById("user_province");
+        var city=document.getElementById("user_city");
+        var arr_prov=new Array(new Option("--请选择省--",''),new Option("湖南","hn"),new Option("广东","gd"),new Option("安徽","ah"),new Option("北京","bj"),new Option("重庆","cq"));
+        var arr_city=new Array();
+        arr_city[0]=new Array(new Option("--请选择市--",''));
+        arr_city[1]=new Array(new Option("长沙",'cs'),new Option("娄底",'ld'),new Option("永州",'yz'));
+        arr_city[2]=new Array(new Option("广州",'gz'),new Option("深圳",'sz'));
+        arr_city[3]=new Array(new Option("合肥",'hf'),new Option("长丰",'cf'),new Option("天长",'tc'));
+        arr_city[4]=new Array(new Option("北京",'bj'),new Option("密云",'my'));
+        arr_city[5]=new Array(new Option("江津",'jj'),new Option("合川",'hc'));
+        //动态载入所有省份
+        function load(){
+            for(var i=0;i<arr_prov.length;i++){
+                province.options[i]=arr_prov[i];
+            }
+        }
+        //选中省份之后，根据索引动态载入相应城市
+        function changeCity(){
+            //清空上次的选项
+            city.options.length=0;
+            //获取省一级的下拉列表选中的索引
+            var index=province.selectedIndex;
+            for(var i=0;i<arr_city[index].length;i++){
+                city.options[i]=arr_city[index][i];
+            }
+        }
+
+//勾选条款
+        var confirm_read=document.getElementById("confirm_read");
+        var userregestier_btn = document.getElementById("userregestier_btn");
+        var flag = true;
+        confirm_read.onclick = function() {
+            userregestier_btn.style.background = "url(../images/newps4_regestierbtn.jpg) no-repeat";
+        }
+
+    </script>
+
+
+</body>
+</html>

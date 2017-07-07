@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+
+#footer .footer_top {
+    height: 60px;
+    line-height: 60px;
+}
+.new_footer {
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+    position: relative;
+    z-index: 80;
+}
+
+body.index > .new_footer #footer {
+    position: relative;
+    background-color: #000000;
+    z-index: 10000;
+}
+.w960 {
+    width: 960px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#footer .footer_top span {
+    float: right;
+    margin-right: 5px;
+}
+ .bdshare-button-style0-24 {
+    zoom: 1;
+}
+#footer a {
+    color: #FFF;
+
+}
+.footer_bottom a{
+    color: #FFF;
+}
+
+.bdshare-button-style0-24 .bds_weixin {
+    background-position: 0 -1612px;
+}
+.bdshare-button-style0-24 a, .bdshare-button-style0-24 .bds_more {
+    float: left;
+    font-size: 18px;
+    padding-left: 25px;
+    line-height: 24px;
+    height: 24px;
+    background-image:url(../images/icons_0_24.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 4px 6px 6px 0;
+}
+.bdshare-button-style0-24 .bds_tsina {
+    background-position: 0 -104px;
+}
+.bdshare-button-style0-24 .bds_tqq {
+    background-position: 0 -260px;
+}
+.bdshare-button-style0-24 .bds_qzone {
+    background-position: 0 -52px;
+}
+.bdshare-button-style0-24:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.cf:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#footer .footer_top .share_btn {
+    float: right;
+    vertical-align: middle;
+    padding-top: 18px;
+    margin: 0 2px;
+}
+a {
+    text-decoration: none;
+}
+
+.footer_maintain {
+    background: #333333;
+    padding: 30px 0;
+}
+.cf:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.footer_maintain dl {
+    width: 140px;
+    margin-right: 19px;
+    float: left;
+    min-height: 176px;
+    margin-bottom: 20px;
+}
+.footer_maintain dl dt {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.footer_maintain dl dd {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer_maintain a {
+    color: #fff;
+}
+
+
+.footer_bottom .footer-logo {
+    float: left;
+    width: 610px;
+}
+.footer_bottom .footer-logo a {
+    background: url(../images/footer-logo.jpg) no-repeat left center;
+    display: block;
+    height: 92px;
+    line-height: 92px;
+    padding-left: 143px;
+    text-decoration: none;
+}
+.footer_bottom .right-container {
+    float: right;
+    margin-top: 6px;
+    width: 330px;
+}
+.footer_bottom .footer-menu {
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.footer_bottom .right-container li {
+    float: right;
+    line-height: 1.5em;
+    padding: 0 13px;
+}
+
+.footer_bottom .footer-menu li {
+    background: none;
+    padding: 0 10px;
+}
+
+
+.footer_bottom .icp {
+    padding-top: 15px;
+    text-align: center;
+    clear: both;
+    padding-bottom: 5px;
+}
+
+.cf:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.new_footer a:hover{
+    color:#fff;
+}

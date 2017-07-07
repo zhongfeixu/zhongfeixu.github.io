@@ -1,0 +1,115 @@
+@charset "UTF-8";
+a{
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+a:hover {
+    color: #fff;
+    font-size: 12px;
+}
+.top_big_box{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+/*头部通栏*/
+.top{
+    height: 30px;
+    background-color:#000000;
+}
+.top img{
+    margin: 0 20px;
+    vertical-align: middle;
+    margin-top: 2px;
+}
+.top a{
+    height: 30px;
+    line-height: 30px;
+}
+.top span {
+    font-weight: 900;
+}
+
+        /*头部导航*/
+.top-nav{
+    height: 49px;
+    background:url("../images/newps4_navbg.jpg");
+}
+.top-nav .top-n-list{
+    float: left;
+}
+.top-nav .top-n-list li{
+    float: left;
+}
+.top-nav .top-n-list li a {
+    padding: 0 18px;
+    height: 49px;
+    display: inline-block;
+    text-align: center;
+    line-height: 49px;
+    font-size: 14px;
+}
+.top-nav .top-n-list li a:hover{
+    background-color: #03c;
+}
+
+.top-nav .top-n-list li img{
+    padding-right:9px;
+    vertical-align: middle;
+}
+
+/*--下拉框--------------------------*/
+.nav-xialabox{
+    height: 165px;
+    width: 100%;
+    background-color: #03c;
+    display: none;
+    position:fixed;
+    z-index: 99;
+}
+
+
+.nav-xialabox ul{
+   margin: 0 auto;
+    width: 1020px;
+}
+
+.nav-xialabox ul li {
+    float: left;
+    /*margin-left: 20px;*/
+}
+.nav-xialabox li a {
+    display: block;
+    width: 150px;
+    height: 165px;
+
+cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.nav-xialabox li a:hover{
+transform: scale(1.1);
+
+}
+
+.nav-xialabox li a span{
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+.nav-xialabox li a img{
+    padding-top: 47px;
+    padding-bottom: 24px;
+    width: 55px;
+    margin-left: 50px;
+}
+
+
+.text{
+    height: 100px;
+    width: 100px;
+    background: pink;
+}

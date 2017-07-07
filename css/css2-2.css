@@ -1,0 +1,178 @@
+@charset "UTF-8";
+    /*让fullImg在盒子固定宽度的盒子中充满盒子*/
+.fullImg{
+    width: 100%;
+    height: 100%;
+}
+
+.jump{
+    position: relative;
+    width: 100%;
+    /*672px刚好是一个屏幕的高度*/
+    height: 672px;
+    overflow: hidden;
+}
+/*给ul设置定位，电梯事件时，给ul设置top的值*/
+.jump ul{
+    width: 100%;
+    height: 2688px;
+    position:relative;
+}
+.jump ul li{
+    width: 100%;
+    height: 672px;
+}
+
+/*1 新颖的游戏感觉-----------------------------------ul中第一个li中的div*/
+.blockItem1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.blockItem1 .wordpage{
+    position: absolute;
+    top:27%;
+    left: 13%;
+    width: 29%;
+    height: 30%;
+}
+.blockItem1 .vrpic{
+    position: absolute;
+    top:8%;
+    left: 50%;
+    width: 32%;
+}
+
+/*2 和家人朋友一起玩*/
+.blockItem2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.blockItem2 .vrpic{
+    position: absolute;
+    top:5%;
+    left: 14%;
+    width: 30%;
+}
+.blockItem2 .wordpage{
+    position: absolute;
+    top:26%;
+    left: 58%;
+    width: 28%;
+}
+
+/*3 除了VR游戏，还有不同的游戏方式*/
+.blockItem3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.blockItem3 .wordpage{
+    position: absolute;
+    top:34%;
+    left: 28%;
+    width: 42%;
+}
+
+/*4 最新动态*/
+.blockItem4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.blockItem4 .maintain_block1{
+    transform: rotate(-2deg);
+    position: absolute;
+    top:23%;
+    left: 15%;
+    width: 29%;
+}
+.blockItem4 .maintain_block2{
+    transform: rotate(2deg);
+    position: absolute;
+    top:23%;
+    left: 60%;
+    width: 29%;
+}
+
+/*jump中的小按钮*/
+.jump .littleBtn{
+    position:absolute;
+    top:15%;
+    left: 3%;
+}
+.jump .littleBtn li{
+    transform: rotate(10deg);
+    padding-left: 5px;
+    width: 70px;
+    height: 30px;
+    border: 2px solid powderblue;
+    line-height: 30px;
+    font:normal normal 16px/30px "微软雅黑";
+    cursor: pointer;
+}
+
+/*给小按钮设置类名，点击时用*/
+.colorBlack{
+    background-color: dodgerblue;
+    color: beige;
+}
+
+/*第二部分 官方视频----------------------------------------------------ul外部的一个视频盒子------------------*/
+.blockItem5{
+    position: relative;
+    width: 100%;
+    height: 672px;
+}
+.blockItem5 .vedio{
+    position: absolute;
+    top:35%;
+    left: 37%;
+    width: 26%;
+    cursor: pointer;
+}
+.blockItem5 p{
+    width: 100%;
+    position: absolute;
+    bottom :5%;
+    text-align: center;
+    color: whitesmoke;
+}
+/*视频部分---------------------------------------*/
+
+.videoBox {
+    position: absolute;
+    top:35%;
+    left: 25%;
+    height: 264px;
+    display: none;
+}
+
+
+/*移入移出的分享框*/
+.shareBar{
+    width: 100%;
+    height: 40px;
+    background-color: #8D9394;
+    position: absolute;
+}
+.shareBar img{
+    margin-top: 5px;
+    float: right;
+}
+.shareBar .more{
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.shareTo{
+    position: absolute;
+    right: -190px;
+    top:40px;
+    width: 226px;
+    height: 328px;
+    border: 2px solid darkseagreen;
+    display: none;
+}

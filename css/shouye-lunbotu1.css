@@ -1,0 +1,72 @@
+@charset "UTF-8";
+#tiaoloutu{
+    margin-top: 79px;
+    /*overflow: hidden;*/
+}
+.carousel-1 {
+    position: relative;
+}
+.carousel-1 .carousel-1-content  {
+    /*width: 1349px;*/
+    /*height: 344px;*/
+    /*margin:0 auto;*/
+    position:relative;
+    width: 100%;
+    height: 450px;
+    overflow:hidden;
+}
+/*.carousel-1 .carousel-1-content .img1,.img2,.img3,.img4,.img5,.img6,.img7 {*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+/*}*/
+.carousel-1 .carousel-1-content ul {
+position:absolute;
+    top:0px;
+}
+.carousel-1 .carousel-1-content ul li {
+    height: 450px;
+}
+.carousel-1 .carousel-1-content img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-1 .sign-carousel {
+    position: absolute;
+    width: 110px;
+    height: 288px;
+    right:20px;
+    top:50%;
+    margin-top: -144px;
+    overflow: hidden;
+}
+.sign-carousel ol {
+    position:absolute;
+    top:0px;
+}
+.sign-carousel ol li {
+    cursor: pointer;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+}
+.carousel-1 .sign-carousel .arrow-up {
+    width: 110px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    background-image: url("../images/arrows-up.png");
+    cursor:pointer;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+.carousel-1 .sign-carousel .arrow-down {
+    width: 110px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../images/arrows-down.png");
+    cursor:pointer;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+
+}
+
